@@ -1,276 +1,286 @@
-2020/12/15 13:57:52 [INFO] Terraform version: 0.14.2  
-2020/12/15 13:57:52 [INFO] Go runtime version: go1.15.6
-2020/12/15 13:57:52 [INFO] CLI args: []string{"/usr/bin/terraform", "apply", "-auto-approve", "-parallelism=1"}
-2020/12/15 13:57:52 [DEBUG] Attempting to open CLI config file: /home/user/.terraformrc
-2020/12/15 13:57:52 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
-2020/12/15 13:57:52 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
-2020/12/15 13:57:52 [DEBUG] ignoring non-existing provider search directory /home/user/.terraform.d/plugins
-2020/12/15 13:57:52 [DEBUG] ignoring non-existing provider search directory /home/user/.local/share/terraform/plugins
-2020/12/15 13:57:52 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
-2020/12/15 13:57:52 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
-2020/12/15 13:57:52 [INFO] CLI command args: []string{"apply", "-auto-approve", "-parallelism=1"}
-2020/12/15 13:57:52 [WARN] Log levels other than TRACE are currently unreliable, and are supported only for backward compatibility.
-  Use TF_LOG=TRACE to see Terraform's internal logs.
-  ----
-2020/12/15 13:57:52 [DEBUG] New state was assigned lineage "e848f095-5598-2584-32de-103172929ab3"
-2020/12/15 13:57:52 [DEBUG] checking for provisioner in "."
-2020/12/15 13:57:52 [DEBUG] checking for provisioner in "/usr/bin"
-2020/12/15 13:57:52 [INFO] Failed to read plugin lock file .terraform/plugins/linux_amd64/lock.json: open .terraform/plugins/linux_amd64/lock.json: no such file or directory
-2020/12/15 13:57:52 [INFO] backend/local: starting Apply operation
-2020-12-15T13:57:52.564+0300 [INFO]  plugin: configuring client automatic mTLS
-2020-12-15T13:57:52.591+0300 [DEBUG] plugin: starting plugin: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.0.0/linux_amd64/terraform-provider-vcd_v3.0.0 args=[.terraform/providers/registry.terraform.io/vmware/vcd/3.0.0/linux_amd64/terraform-provider-vcd_v3.0.0]
-2020-12-15T13:57:52.591+0300 [DEBUG] plugin: plugin started: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.0.0/linux_amd64/terraform-provider-vcd_v3.0.0 pid=1839591
-2020-12-15T13:57:52.591+0300 [DEBUG] plugin: waiting for RPC address: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.0.0/linux_amd64/terraform-provider-vcd_v3.0.0
-2020-12-15T13:57:52.599+0300 [INFO]  plugin.terraform-provider-vcd_v3.0.0: configuring server automatic mTLS: timestamp=2020-12-15T13:57:52.599+0300
-2020-12-15T13:57:52.624+0300 [DEBUG] plugin.terraform-provider-vcd_v3.0.0: plugin address: address=/tmp/plugin393805415 network=unix timestamp=2020-12-15T13:57:52.624+0300
-2020-12-15T13:57:52.624+0300 [DEBUG] plugin: using plugin: version=5
-2020-12-15T13:57:52.676+0300 [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
-2020-12-15T13:57:52.684+0300 [DEBUG] plugin: plugin process exited: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.0.0/linux_amd64/terraform-provider-vcd_v3.0.0 pid=1839591
-2020-12-15T13:57:52.684+0300 [DEBUG] plugin: plugin exited
-2020/12/15 13:57:52 [INFO] terraform: building graph: GraphTypeValidate
-2020/12/15 13:57:52 [DEBUG] ProviderTransformer: "vcd_vapp.vapp" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/vmware/vcd"]
-2020/12/15 13:57:52 [DEBUG] ProviderTransformer: "vcd_vapp_vm.vm" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/vmware/vcd"]
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "vcd_vapp.vapp" references: [var.VAPP_NAME]
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "vcd_vapp_vm.vm" references: [var.VCD_TEMPLATE_VM var.VAPP_NAME var.STORAGE_POLICY_DEFAULT var.VCD_CATALOG_NAME var.STORAGE_POLICY_DEFAULT]
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.DISK_MASTER_LOG_SIZE" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.VCD_ORG" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.EXTERNAL_NET_NAME" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_STATIC_IP_POOL_START" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_MASTER" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.EDGE_GATEWAY_NAME" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.DISK_MASTER_ETCD_SIZE" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_DNS2" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.WORKER_RAM" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.VCD_URL" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.MASTER_COUNT" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.VCD_USER" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.VCD_TEMPLATE_VM" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_GATEWAY_IP" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_NETMASK" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.K8S_API_PORT_INTERNAL" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.WORKER_CPU" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_STATIC_IP_POOL_END" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.K8S_API_FLOATING_ADDRESS" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_DEFAULT" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_NAME" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.MASTER_CPU" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.K8S_API_PORT_EXTERNAL" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_DNS1" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_ETCD" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.VCD_MAX_RETRY_TIMEOUT" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_WORKER" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.FS_COUNT" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.WORKER_COUNT" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.INTERNAL_SUBNET_PREFIX" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.IOPS_ETCD" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_MASTER_LOG" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.IOPS" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.VCD_CATALOG_NAME" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.ROOT_PW" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_FS" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.DISK_WORKER_LOG_SIZE" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.HOSTNAME_PREFIX" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.INTERNAL_SUBNET" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.DISK_FS_DATA_SIZE" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.VAPP_NAME" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.FIRST_SSH_PORT_EXTERNAL" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.VCD_PASSWORD" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.VCD_VDC" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.MASTER_RAM" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.FS_RAM" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.DISK_WORKER_CONTAINERS_SIZE" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.EXTERNAL_IP" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.FS_CPU" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/vmware/vcd\"]" references: [var.VCD_PASSWORD var.VCD_URL var.VCD_USER var.VCD_ORG var.VCD_VDC var.VCD_MAX_RETRY_TIMEOUT]
-2020/12/15 13:57:52 [DEBUG] Starting graph walk: walkValidate
-2020-12-15T13:57:52.687+0300 [INFO]  plugin: configuring client automatic mTLS
-2020-12-15T13:57:52.712+0300 [DEBUG] plugin: starting plugin: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.0.0/linux_amd64/terraform-provider-vcd_v3.0.0 args=[.terraform/providers/registry.terraform.io/vmware/vcd/3.0.0/linux_amd64/terraform-provider-vcd_v3.0.0]
-2020-12-15T13:57:52.712+0300 [DEBUG] plugin: plugin started: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.0.0/linux_amd64/terraform-provider-vcd_v3.0.0 pid=1839604
-2020-12-15T13:57:52.712+0300 [DEBUG] plugin: waiting for RPC address: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.0.0/linux_amd64/terraform-provider-vcd_v3.0.0
-2020-12-15T13:57:52.720+0300 [INFO]  plugin.terraform-provider-vcd_v3.0.0: configuring server automatic mTLS: timestamp=2020-12-15T13:57:52.720+0300
-2020-12-15T13:57:52.746+0300 [DEBUG] plugin: using plugin: version=5
-2020-12-15T13:57:52.746+0300 [DEBUG] plugin.terraform-provider-vcd_v3.0.0: plugin address: address=/tmp/plugin897151833 network=unix timestamp=2020-12-15T13:57:52.746+0300
-2020-12-15T13:57:52.799+0300 [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
-2020-12-15T13:57:52.814+0300 [DEBUG] plugin: plugin process exited: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.0.0/linux_amd64/terraform-provider-vcd_v3.0.0 pid=1839604
-2020-12-15T13:57:52.814+0300 [DEBUG] plugin: plugin exited
-2020/12/15 13:57:52 [INFO] backend/local: apply calling Plan
-2020/12/15 13:57:52 [INFO] terraform: building graph: GraphTypePlan
-2020/12/15 13:57:52 [DEBUG] ProviderTransformer: "vcd_vapp.vapp (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/vmware/vcd"]
-2020/12/15 13:57:52 [DEBUG] ProviderTransformer: "vcd_vapp_vm.vm (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/vmware/vcd"]
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_STATIC_IP_POOL_START" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_STATIC_IP_POOL_END" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_FS" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.DISK_MASTER_LOG_SIZE" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.EXTERNAL_NET_NAME" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.INTERNAL_SUBNET_PREFIX" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.VCD_VDC" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.VCD_TEMPLATE_VM" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.INTERNAL_SUBNET" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.K8S_API_PORT_EXTERNAL" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "vcd_vapp.vapp (expand)" references: [var.VAPP_NAME]
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.IOPS_ETCD" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.DISK_WORKER_CONTAINERS_SIZE" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_DNS1" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.DISK_MASTER_ETCD_SIZE" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_GATEWAY_IP" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.HOSTNAME_PREFIX" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.FS_COUNT" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "vcd_vapp_vm.vm (expand)" references: [var.VCD_CATALOG_NAME var.VCD_TEMPLATE_VM var.VAPP_NAME var.STORAGE_POLICY_DEFAULT var.STORAGE_POLICY_DEFAULT]
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.WORKER_CPU" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.EDGE_GATEWAY_NAME" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_MASTER_LOG" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.VCD_MAX_RETRY_TIMEOUT" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.K8S_API_FLOATING_ADDRESS" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_DEFAULT" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.MASTER_RAM" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.FS_RAM" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.WORKER_RAM" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.VAPP_NAME" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.FS_CPU" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_NETMASK" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.DISK_WORKER_LOG_SIZE" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/vmware/vcd\"]" references: [var.VCD_MAX_RETRY_TIMEOUT var.VCD_PASSWORD var.VCD_URL var.VCD_USER var.VCD_ORG var.VCD_VDC]
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.WORKER_COUNT" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_ETCD" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.VCD_PASSWORD" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.VCD_CATALOG_NAME" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.K8S_API_PORT_INTERNAL" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_DNS2" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.VCD_URL" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_MASTER" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.VCD_USER" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.MASTER_CPU" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.VCD_ORG" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_WORKER" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.DISK_FS_DATA_SIZE" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.MASTER_COUNT" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.IOPS" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.EXTERNAL_IP" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.FIRST_SSH_PORT_EXTERNAL" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.ROOT_PW" references: []
-2020/12/15 13:57:52 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_NAME" references: []
-2020/12/15 13:57:52 [DEBUG] Starting graph walk: walkPlan
-2020-12-15T13:57:52.818+0300 [INFO]  plugin: configuring client automatic mTLS
-2020-12-15T13:57:52.847+0300 [DEBUG] plugin: starting plugin: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.0.0/linux_amd64/terraform-provider-vcd_v3.0.0 args=[.terraform/providers/registry.terraform.io/vmware/vcd/3.0.0/linux_amd64/terraform-provider-vcd_v3.0.0]
-2020-12-15T13:57:52.848+0300 [DEBUG] plugin: plugin started: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.0.0/linux_amd64/terraform-provider-vcd_v3.0.0 pid=1839618
-2020-12-15T13:57:52.848+0300 [DEBUG] plugin: waiting for RPC address: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.0.0/linux_amd64/terraform-provider-vcd_v3.0.0
-2020-12-15T13:57:52.856+0300 [INFO]  plugin.terraform-provider-vcd_v3.0.0: configuring server automatic mTLS: timestamp=2020-12-15T13:57:52.856+0300
-2020-12-15T13:57:52.881+0300 [DEBUG] plugin: using plugin: version=5
-2020-12-15T13:57:52.881+0300 [DEBUG] plugin.terraform-provider-vcd_v3.0.0: plugin address: address=/tmp/plugin017229824 network=unix timestamp=2020-12-15T13:57:52.881+0300
-2020-12-15T13:57:52.934+0300 [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
-2020/12/15 13:57:53 [INFO] ReferenceTransformer: reference not found: "var.VAPP_NAME"
-2020/12/15 13:57:53 [DEBUG] ReferenceTransformer: "vcd_vapp.vapp" references: []
-2020/12/15 13:57:53 [DEBUG] Resource instance state not found for node "vcd_vapp_vm.vm", instance vcd_vapp_vm.vm
-2020/12/15 13:57:53 [INFO] ReferenceTransformer: reference not found: "var.VAPP_NAME"
-2020/12/15 13:57:53 [INFO] ReferenceTransformer: reference not found: "var.STORAGE_POLICY_DEFAULT"
-2020/12/15 13:57:53 [INFO] ReferenceTransformer: reference not found: "var.VCD_CATALOG_NAME"
-2020/12/15 13:57:53 [INFO] ReferenceTransformer: reference not found: "var.VCD_TEMPLATE_VM"
-2020/12/15 13:57:53 [INFO] ReferenceTransformer: reference not found: "var.STORAGE_POLICY_DEFAULT"
-2020/12/15 13:57:53 [DEBUG] ReferenceTransformer: "vcd_vapp_vm.vm" references: []
-2020-12-15T13:57:55.801+0300 [DEBUG] plugin.terraform-provider-vcd_v3.0.0: 2020/12/15 13:57:55 [TRACE] Setting empty properties into statefile because no properties were specified
-2020/12/15 13:57:56 [WARN] Provider "registry.terraform.io/vmware/vcd" produced an unexpected new value for vcd_vapp.vapp during refresh.
-      - .guest_properties: was null, but now cty.MapValEmpty(cty.String)
-      - .metadata: was null, but now cty.MapValEmpty(cty.String)
-2020/12/15 13:57:56 [DEBUG] refresh: vcd_vapp_vm.vm: no state, so not refreshing
-2020/12/15 13:57:56 [WARN] Provider "registry.terraform.io/vmware/vcd" produced an invalid plan for vcd_vapp_vm.vm, but we are tolerating it because it is using the legacy plugin SDK.
+2021-07-01T17:49:01.712+0300 [DEBUG] Adding temp file log sink: /tmp/terraform-log816307162
+2021-07-01T17:49:01.712+0300 [INFO]  Terraform version: 1.0.1
+2021-07-01T17:49:01.712+0300 [INFO]  Go runtime version: go1.16.4
+2021-07-01T17:49:01.712+0300 [INFO]  CLI args: []string{"/root/.terraform.versions/terraform_1.0.1", "apply", "-auto-approve"}
+2021-07-01T17:49:01.712+0300 [DEBUG] Attempting to open CLI config file: /root/.terraformrc
+2021-07-01T17:49:01.713+0300 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2021-07-01T17:49:01.713+0300 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2021-07-01T17:49:01.713+0300 [DEBUG] ignoring non-existing provider search directory /root/.terraform.d/plugins
+2021-07-01T17:49:01.713+0300 [DEBUG] ignoring non-existing provider search directory /root/.local/share/terraform/plugins
+2021-07-01T17:49:01.713+0300 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2021-07-01T17:49:01.713+0300 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2021-07-01T17:49:01.713+0300 [INFO]  CLI command args: []string{"apply", "-auto-approve"}
+2021-07-01T17:49:01.722+0300 [INFO]  AWS Auth provider used: "StaticProvider"
+2021-07-01T17:49:01.822+0300 [DEBUG] checking for provisioner in "."
+2021-07-01T17:49:01.822+0300 [DEBUG] checking for provisioner in "/root/.terraform.versions"
+2021-07-01T17:49:01.823+0300 [INFO]  Failed to read plugin lock file .terraform/plugins/linux_amd64/lock.json: open .terraform/plugins/linux_amd64/lock.json: no such file or directory
+2021-07-01T17:49:01.824+0300 [INFO]  backend/local: starting Apply operation
+
+-----------------------------------------------------
+2021-07-01T17:49:01.922+0300 [DEBUG] [aws-sdk-go]
+2021-07-01T17:49:01.929+0300 [DEBUG] created provider logger: level=debug
+2021-07-01T17:49:01.929+0300 [INFO]  provider: configuring client automatic mTLS
+2021-07-01T17:49:01.985+0300 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 args=[.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0]
+2021-07-01T17:49:01.986+0300 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 pid=21226
+2021-07-01T17:49:01.986+0300 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0
+2021-07-01T17:49:02.000+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: configuring server automatic mTLS: timestamp=2021-07-01T17:49:01.999+0300
+2021-07-01T17:49:02.076+0300 [DEBUG] provider.terraform-provider-vcd_v3.3.0: plugin address: address=/tmp/plugin412055667 network=unix timestamp=2021-07-01T17:49:02.075+0300
+2021-07-01T17:49:02.076+0300 [DEBUG] provider: using plugin: version=5
+2021-07-01T17:49:02.171+0300 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-07-01T17:49:02.172+0300 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 pid=21226
+2021-07-01T17:49:02.173+0300 [DEBUG] provider: plugin exited
+2021-07-01T17:49:02.173+0300 [INFO]  terraform: building graph: GraphTypeValidate
+2021-07-01T17:49:02.175+0300 [DEBUG] ProviderTransformer: "data.vcd_org.my-org" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/terraform-providers/vcd"]
+2021-07-01T17:49:02.175+0300 [DEBUG] ProviderTransformer: "vcd_vm.test-vm" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/terraform-providers/vcd"]
+2021-07-01T17:49:02.175+0300 [DEBUG] ProviderTransformer: "data.vcd_org_vdc.my-org-vdc" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/terraform-providers/vcd"]
+2021-07-01T17:49:02.176+0300 [DEBUG] ReferenceTransformer: "vcd_vm.test-vm" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "data.vcd_org_vdc.my-org-vdc" references: [var.VCD_VDC var.VCD_ORG]
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.K8S_API_PORT_EXTERNAL" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.VCD_VDC" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.IP_MONITORING" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_FS" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.DISK_FS_DATA_SIZE" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.EXTERNAL_NET_NAME" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.MASTER_CPU" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.MASTER_COUNT" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.VCD_PASSWORD" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.VCD_TEMPLATE_VM_W" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.VCD_MAX_RETRY_TIMEOUT" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.FS_CPU" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_SUBNET" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_NETMASK" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.K8S_API_PORT_INTERNAL" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_DNS1" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.VCD_TEMPLATE_VM_FS" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.VCD_ORG" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "output.id" references: [data.vcd_org.my-org]
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_GATEWAY_IP" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_STATIC_IP_POOL_START" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.DISK_WORKER_CONTAINERS_SIZE" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.VCD_CATALOG_NAME" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.EXTERNAL_IP" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_MASTER" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.FS_COUNT" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.IOPS_FS" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_STATIC_IP_POOL_END" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.VCD_URL" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_WORKER" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.VCD_TEMPLATE_VM_M" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_DNS2" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.VCD_USER" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.WORKER_RAM" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.WORKER_COUNT" references: []
+2021-07-01T17:49:02.177+0300 [DEBUG] ReferenceTransformer: "var.WORKER_CPU" references: []
+2021-07-01T17:49:02.178+0300 [DEBUG] ReferenceTransformer: "data.vcd_org.my-org" references: [var.VCD_ORG]
+2021-07-01T17:49:02.178+0300 [DEBUG] ReferenceTransformer: "var.VAPP_NAME" references: []
+2021-07-01T17:49:02.178+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_NAME" references: []
+2021-07-01T17:49:02.178+0300 [DEBUG] ReferenceTransformer: "var.FIRST_SSH_PORT_EXTERNAL" references: []
+2021-07-01T17:49:02.178+0300 [DEBUG] ReferenceTransformer: "var.HOSTNAME_PREFIX" references: []
+2021-07-01T17:49:02.178+0300 [DEBUG] ReferenceTransformer: "output.provider_vdc" references: [data.vcd_org_vdc.my-org-vdc]
+2021-07-01T17:49:02.178+0300 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/terraform-providers/vcd\"]" references: [var.VCD_PASSWORD var.VCD_URL var.VCD_ORG var.VCD_MAX_RETRY_TIMEOUT var.VCD_VDC var.VCD_USER]
+2021-07-01T17:49:02.178+0300 [DEBUG] ReferenceTransformer: "var.IOPS_WORKER" references: []
+2021-07-01T17:49:02.178+0300 [DEBUG] ReferenceTransformer: "var.EDGE_GATEWAY_NAME" references: []
+2021-07-01T17:49:02.178+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_SUBNET_PREFIX" references: []
+2021-07-01T17:49:02.178+0300 [DEBUG] ReferenceTransformer: "var.FS_RAM" references: []
+2021-07-01T17:49:02.178+0300 [DEBUG] ReferenceTransformer: "var.MASTER_RAM" references: []
+2021-07-01T17:49:02.178+0300 [DEBUG] ReferenceTransformer: "var.K8S_API_FLOATING_ADDRESS" references: []
+2021-07-01T17:49:02.181+0300 [DEBUG] Starting graph walk: walkValidate
+2021-07-01T17:49:02.185+0300 [DEBUG] created provider logger: level=debug
+2021-07-01T17:49:02.185+0300 [INFO]  provider: configuring client automatic mTLS
+2021-07-01T17:49:02.244+0300 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 args=[.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0]
+2021-07-01T17:49:02.245+0300 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 pid=21238
+2021-07-01T17:49:02.245+0300 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0
+2021-07-01T17:49:02.256+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: configuring server automatic mTLS: timestamp=2021-07-01T17:49:02.256+0300
+2021-07-01T17:49:02.321+0300 [DEBUG] provider: using plugin: version=5
+2021-07-01T17:49:02.321+0300 [DEBUG] provider.terraform-provider-vcd_v3.3.0: plugin address: address=/tmp/plugin883952701 network=unix timestamp=2021-07-01T17:49:02.320+0300
+2021-07-01T17:49:02.431+0300 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-07-01T17:49:02.432+0300 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 pid=21238
+2021-07-01T17:49:02.432+0300 [DEBUG] provider: plugin exited
+2021-07-01T17:49:02.433+0300 [INFO]  backend/local: apply calling Plan
+2021-07-01T17:49:02.433+0300 [INFO]  terraform: building graph: GraphTypePlan
+2021-07-01T17:49:02.435+0300 [DEBUG] ProviderTransformer: "data.vcd_org_vdc.my-org-vdc (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/terraform-providers/vcd"]
+2021-07-01T17:49:02.435+0300 [DEBUG] ProviderTransformer: "vcd_vm.test-vm (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/terraform-providers/vcd"]
+2021-07-01T17:49:02.435+0300 [DEBUG] ProviderTransformer: "data.vcd_org.my-org (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/terraform-providers/vcd"]
+2021-07-01T17:49:02.436+0300 [DEBUG] ReferenceTransformer: "var.VAPP_NAME" references: []
+2021-07-01T17:49:02.436+0300 [DEBUG] ReferenceTransformer: "var.IP_MONITORING" references: []
+2021-07-01T17:49:02.436+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_NETMASK" references: []
+2021-07-01T17:49:02.436+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_SUBNET" references: []
+2021-07-01T17:49:02.436+0300 [DEBUG] ReferenceTransformer: "var.DISK_FS_DATA_SIZE" references: []
+2021-07-01T17:49:02.436+0300 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_MASTER" references: []
+2021-07-01T17:49:02.436+0300 [DEBUG] ReferenceTransformer: "var.MASTER_CPU" references: []
+2021-07-01T17:49:02.436+0300 [DEBUG] ReferenceTransformer: "var.VCD_TEMPLATE_VM_W" references: []
+2021-07-01T17:49:02.436+0300 [DEBUG] ReferenceTransformer: "var.K8S_API_PORT_EXTERNAL" references: []
+2021-07-01T17:49:02.436+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_SUBNET_PREFIX" references: []
+2021-07-01T17:49:02.436+0300 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_WORKER" references: []
+2021-07-01T17:49:02.436+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_DNS1" references: []
+2021-07-01T17:49:02.436+0300 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_FS" references: []
+2021-07-01T17:49:02.436+0300 [DEBUG] ReferenceTransformer: "var.WORKER_COUNT" references: []
+2021-07-01T17:49:02.436+0300 [DEBUG] ReferenceTransformer: "var.VCD_TEMPLATE_VM_FS" references: []
+2021-07-01T17:49:02.436+0300 [DEBUG] ReferenceTransformer: "var.MASTER_COUNT" references: []
+2021-07-01T17:49:02.436+0300 [DEBUG] ReferenceTransformer: "var.DISK_WORKER_CONTAINERS_SIZE" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.K8S_API_PORT_INTERNAL" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/terraform-providers/vcd\"]" references: [var.VCD_URL var.VCD_ORG var.VCD_PASSWORD var.VCD_MAX_RETRY_TIMEOUT var.VCD_VDC var.VCD_USER]
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.WORKER_CPU" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.VCD_ORG" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_NAME" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.EXTERNAL_IP" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.WORKER_RAM" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.FS_RAM" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.FS_CPU" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "output.id" references: [data.vcd_org.my-org (expand)]
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.VCD_USER" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.IOPS_WORKER" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.VCD_MAX_RETRY_TIMEOUT" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.VCD_URL" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.EDGE_GATEWAY_NAME" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.MASTER_RAM" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "data.vcd_org_vdc.my-org-vdc (expand)" references: [var.VCD_ORG var.VCD_VDC]
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.FS_COUNT" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.IOPS_FS" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.VCD_CATALOG_NAME" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_DNS2" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.VCD_TEMPLATE_VM_M" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.K8S_API_FLOATING_ADDRESS" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_STATIC_IP_POOL_START" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_GATEWAY_IP" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.VCD_PASSWORD" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.FIRST_SSH_PORT_EXTERNAL" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.EXTERNAL_NET_NAME" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "var.HOSTNAME_PREFIX" references: []
+2021-07-01T17:49:02.437+0300 [DEBUG] ReferenceTransformer: "output.provider_vdc" references: [data.vcd_org_vdc.my-org-vdc (expand)]
+2021-07-01T17:49:02.438+0300 [DEBUG] ReferenceTransformer: "vcd_vm.test-vm (expand)" references: []
+2021-07-01T17:49:02.438+0300 [DEBUG] ReferenceTransformer: "data.vcd_org.my-org (expand)" references: [var.VCD_ORG]
+2021-07-01T17:49:02.438+0300 [DEBUG] ReferenceTransformer: "var.VCD_VDC" references: []
+2021-07-01T17:49:02.438+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_STATIC_IP_POOL_END" references: []
+2021-07-01T17:49:02.441+0300 [DEBUG] Starting graph walk: walkPlan
+2021-07-01T17:49:02.444+0300 [DEBUG] created provider logger: level=debug
+2021-07-01T17:49:02.444+0300 [INFO]  provider: configuring client automatic mTLS
+2021-07-01T17:49:02.502+0300 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 args=[.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0]
+2021-07-01T17:49:02.503+0300 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 pid=21251
+2021-07-01T17:49:02.503+0300 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0
+2021-07-01T17:49:02.514+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: configuring server automatic mTLS: timestamp=2021-07-01T17:49:02.514+0300
+2021-07-01T17:49:02.587+0300 [DEBUG] provider.terraform-provider-vcd_v3.3.0: plugin address: address=/tmp/plugin830559203 network=unix timestamp=2021-07-01T17:49:02.587+0300
+2021-07-01T17:49:02.587+0300 [DEBUG] provider: using plugin: version=5
+2021-07-01T17:49:02.702+0300 [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/terraform-providers/vcd\"]" changed the config value, but that value is unused
+2021-07-01T17:49:04.962+0300 [DEBUG] Resource instance state not found for node "vcd_vm.test-vm", instance vcd_vm.test-vm
+2021-07-01T17:49:04.962+0300 [DEBUG] ReferenceTransformer: "vcd_vm.test-vm" references: []
+2021-07-01T17:49:04.963+0300 [DEBUG] refresh: vcd_vm.test-vm: no state, so not refreshing
+2021-07-01T17:49:04.963+0300 [INFO]  ReferenceTransformer: reference not found: "var.VCD_ORG"
+2021-07-01T17:49:04.963+0300 [DEBUG] ReferenceTransformer: "data.vcd_org.my-org" references: []
+2021-07-01T17:49:04.963+0300 [INFO]  ReferenceTransformer: reference not found: "var.VCD_ORG"
+2021-07-01T17:49:04.964+0300 [INFO]  ReferenceTransformer: reference not found: "var.VCD_VDC"
+2021-07-01T17:49:04.964+0300 [DEBUG] ReferenceTransformer: "data.vcd_org_vdc.my-org-vdc" references: []
+2021-07-01T17:49:04.966+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: 2021/07/01 17:49:04 Reading Org with id g-K8S-SPB-NSXT-2: timestamp=2021-07-01T17:49:04.966+0300
+2021-07-01T17:49:04.968+0300 [WARN]  Provider "registry.terraform.io/terraform-providers/vcd" produced an invalid plan for vcd_vm.test-vm, but we are tolerating it because it is using the legacy plugin SDK.
     The following problems may be the cause of any confusing errors from downstream operations:
-      - .cpu_hot_add_enabled: planned value cty.False does not match config value cty.NullVal(cty.Bool)
-      - .memory_hot_add_enabled: planned value cty.False does not match config value cty.NullVal(cty.Bool)
-      - .accept_all_eulas: planned value cty.True does not match config value cty.NullVal(cty.Bool)
-      - .prevent_update_power_off: planned value cty.False does not match config value cty.NullVal(cty.Bool)
-      - .power_on: planned value cty.True does not match config value cty.NullVal(cty.Bool)
-      - .expose_hardware_virtualization: planned value cty.False does not match config value cty.NullVal(cty.Bool)
+      - .prevent_update_power_off: planned value cty.False for a non-computed attribute
+      - .power_on: planned value cty.True for a non-computed attribute
+      - .accept_all_eulas: planned value cty.True for a non-computed attribute
+      - .cpu_hot_add_enabled: planned value cty.False for a non-computed attribute
+      - .memory_hot_add_enabled: planned value cty.False for a non-computed attribute
+      - .expose_hardware_virtualization: planned value cty.False for a non-computed attribute
       - .customization: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
-2020-12-15T13:57:56.383+0300 [DEBUG] plugin: plugin process exited: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.0.0/linux_amd64/terraform-provider-vcd_v3.0.0 pid=1839618
-2020-12-15T13:57:56.383+0300 [DEBUG] plugin: plugin exited
-2020/12/15 13:57:56 [INFO] backend/local: apply calling Apply
-2020/12/15 13:57:56 [INFO] terraform: building graph: GraphTypeApply
-2020/12/15 13:57:56 [DEBUG] Resource state not found for node "vcd_vapp_vm.vm", instance vcd_vapp_vm.vm
-2020/12/15 13:57:56 [DEBUG] ProviderTransformer: "vcd_vapp.vapp (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/vmware/vcd"]
-2020/12/15 13:57:56 [DEBUG] ProviderTransformer: "vcd_vapp_vm.vm (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/vmware/vcd"]
-2020/12/15 13:57:56 [DEBUG] ProviderTransformer: "vcd_vapp_vm.vm" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/vmware/vcd"]
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.FS_RAM" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.DISK_WORKER_CONTAINERS_SIZE" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.FS_CPU" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "vcd_vapp.vapp (expand)" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.VCD_VDC" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.INTERNAL_SUBNET" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_WORKER" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.HOSTNAME_PREFIX" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.DISK_WORKER_LOG_SIZE" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.VCD_URL" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.EDGE_GATEWAY_NAME" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_DEFAULT" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_STATIC_IP_POOL_START" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_DNS1" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.DISK_FS_DATA_SIZE" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "vcd_vapp_vm.vm (expand)" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/vmware/vcd\"]" references: [var.VCD_MAX_RETRY_TIMEOUT var.VCD_VDC var.VCD_PASSWORD var.VCD_URL var.VCD_USER var.VCD_ORG]
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_STATIC_IP_POOL_END" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.INTERNAL_SUBNET_PREFIX" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.MASTER_RAM" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "vcd_vapp_vm.vm" references: [var.VCD_TEMPLATE_VM var.VAPP_NAME var.STORAGE_POLICY_DEFAULT var.VCD_CATALOG_NAME var.STORAGE_POLICY_DEFAULT]
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.WORKER_CPU" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.EXTERNAL_IP" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_DNS2" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.VAPP_NAME" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_FS" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_NAME" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_GATEWAY_IP" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.DISK_MASTER_LOG_SIZE" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_MASTER" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.IOPS" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.K8S_API_PORT_EXTERNAL" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.FS_COUNT" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_MASTER_LOG" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.VCD_ORG" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.IOPS_ETCD" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.VCD_USER" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.MASTER_COUNT" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.DISK_MASTER_ETCD_SIZE" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.WORKER_RAM" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.VCD_CATALOG_NAME" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.ROOT_PW" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.K8S_API_FLOATING_ADDRESS" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.VCD_TEMPLATE_VM" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.MASTER_CPU" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.VCD_PASSWORD" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.VCD_MAX_RETRY_TIMEOUT" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_ETCD" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.EXTERNAL_NET_NAME" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_NETMASK" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.WORKER_COUNT" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.K8S_API_PORT_INTERNAL" references: []
-2020/12/15 13:57:56 [DEBUG] ReferenceTransformer: "var.FIRST_SSH_PORT_EXTERNAL" references: []
-2020/12/15 13:57:56 [DEBUG] pruneUnusedNodes: vcd_vapp.vapp (expand) is no longer needed, removing
-2020/12/15 13:57:56 [DEBUG] Starting graph walk: walkApply
-2020-12-15T13:57:56.400+0300 [INFO]  plugin: configuring client automatic mTLS
-2020-12-15T13:57:56.457+0300 [DEBUG] plugin: starting plugin: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.0.0/linux_amd64/terraform-provider-vcd_v3.0.0 args=[.terraform/providers/registry.terraform.io/vmware/vcd/3.0.0/linux_amd64/terraform-provider-vcd_v3.0.0]
-2020-12-15T13:57:56.457+0300 [DEBUG] plugin: plugin started: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.0.0/linux_amd64/terraform-provider-vcd_v3.0.0 pid=1839647
-2020-12-15T13:57:56.457+0300 [DEBUG] plugin: waiting for RPC address: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.0.0/linux_amd64/terraform-provider-vcd_v3.0.0
-2020-12-15T13:57:56.467+0300 [INFO]  plugin.terraform-provider-vcd_v3.0.0: configuring server automatic mTLS: timestamp=2020-12-15T13:57:56.467+0300
-2020-12-15T13:57:56.509+0300 [DEBUG] plugin.terraform-provider-vcd_v3.0.0: plugin address: network=unix address=/tmp/plugin456904286 timestamp=2020-12-15T13:57:56.509+0300
-2020-12-15T13:57:56.509+0300 [DEBUG] plugin: using plugin: version=5
-2020-12-15T13:57:56.569+0300 [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unimplemented desc = unknown service plugin.GRPCStdio"
-2020/12/15 13:57:57 [WARN] Provider "registry.terraform.io/vmware/vcd" produced an invalid plan for vcd_vapp_vm.vm, but we are tolerating it because it is using the legacy plugin SDK.
+2021-07-01T17:49:05.386+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: 2021/07/01 17:49:05 Org with id g-K8S-SPB-NSXT-2 found: timestamp=2021-07-01T17:49:05.386+0300
+2021-07-01T17:49:05.495+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: 2021/07/01 17:49:05 [TRACE] vdc read completed: &types.AdminVdc{Xmlns:"http://www.vmware.com/vcloud/v1.5", Vdc:types.Vdc{HREF:"https://cloud.com/api/vdc/fc90b202-fb19-4d28-a3ec-114dfe5e780c", Type:"application/vnd.vmware.vcloud.vdc+xml", ID:"urn:vcloud:vdc:fc90b202-fb19-4d28-a3ec-114dfe5e780c", OperationKey:"", Name:"g-K8S-SPB-NSXT-2_vDC", Status:1, Link:types.LinkList{(*types.Link)(0xc0005ebf90), (*types.Link)(0xc0006ac000), (*types.Link)(0xc0006ac050), (*types.Link)(0xc0006ac0a0), (*types.Link)(0xc0006ac0f0), (*types.Link)(0xc0006ac140), (*types.Link)(0xc0006ac190), (*types.Link)(0xc0006ac1e0), (*types.Link)(0xc0006ac230), (*types.Link)(0xc0006ac280), (*types.Link)(0xc0006ac2d0), (*types.Link)(0xc0006ac320), (*types.Link)(0xc0006ac370), (*types.Link)(0xc0006ac3c0), (*types.Link)(0xc0006ac410), (*types.Link)(0xc0006ac460), (*types.Link)(0xc0006ac4b0), (*types.Link)(0xc0006ac500), (*types.Link)(0xc0006ac550), (*types.Link)(0xc0006ac5a0), (*types.Link)(0xc0006ac5f0), (*types.Link)(0xc0006ac640), (*types.Link)(0xc0006ac690), (*types.Link)(0xc0006ac6e0), (*types.Link)(0xc0006ac730), (*types.Link)(0xc0006ac870), (*types.Link)(0xc0006ac8c0), (*types.Link)(0xc0006ac910), (*types.Link)(0xc0006ac960), (*types.Link)(0xc0006ac9b0), (*types.Link)(0xc0006aca00), (*types.Link)(0xc0006aca50), (*types.Link)(0xc0006acbe0), (*types.Link)(0xc0006acc30), (*types.Link)(0xc0006acc80), (*types.Link)(0xc0006accd0), (*types.Link)(0xc0006acd20), (*types.Link)(0xc0006ace60), (*types.Link)(0xc0006aceb0), (*types.Link)(0xc0006acf00), (*types.Link)(0xc0006acf50), (*types.Link)(0xc0006acfa0), (*types.Link)(0xc0006acff0), (*types.Link)(0xc0006ad040), (*types.Link)(0xc0006ad1d0), (*types.Link)(0xc0006ad220), (*types.Link)(0xc0006ad270), (*types.Link)(0xc0006ad2c0), (*types.Link)(0xc0006ad310), (*types.Link)(0xc0006ad360), (*types.Link)(0xc0006ad3b0), (*types.Link)(0xc0006ad400), (*types.Link)(0xc0006ad450), (*types.Link)(0xc0006ad4a0), (*types.Link)(0xc0006ad4f0), (*types.Link)(0xc0006ad540), (*types.Link)(0xc0006ad590), (*types.Link)(0xc0006ad5e0)}, Description:"", Tasks:(*types.TasksInProgress)(nil), AllocationModel:"AllocationPool", ComputeCapacity:[]*types.ComputeCapacity{(*types.ComputeCapacity)(0xc00026da90)}, ResourceEntities:[]*types.ResourceEntities{(*types.ResourceEntities)(0xc000368048)}, AvailableNetworks:[]*types.AvailableNetworks{(*types.AvailableNetworks)(0xc0003680a8)}, Capabilities:[]*types.Capabilities{(*types.Capabilities)(0xc00011ad80)}, NicQuota:0, NetworkQuota:100, UsedNetworkCount:0, VMQuota:100, IsEnabled:true, VdcStorageProfiles:(*types.VdcStorageProfiles)(0xc000368690), DefaultComputePolicy:(*types.Reference)(0xc0004ddf00)}, VCpuInMhz2:(*int64)(0xc0005eddd0), ResourceGuaranteedMemory:(*float64)(nil), ResourceGuaranteedCpu:(*float64)(nil), VCpuInMhz:(*int64)(nil), IsThinProvision:(*bool)(nil), NetworkPoolReference:(*types.Reference)(nil), ProviderVdcReference:(*types.Reference)(nil), ResourcePoolRefs:(*types.VimObjectRefs)(nil), UsesFastProvisioning:(*bool)(nil), OverCommitAllowed:false, VmDiscoveryEnabled:false, IsElastic:(*bool)(nil), IncludeMemoryOverhead:(*bool)(nil), UniversalNetworkPoolReference:(*types.Reference)(nil)}: timestamp=2021-07-01T17:49:05.494+0300
+2021-07-01T17:49:05.498+0300 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-07-01T17:49:05.501+0300 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 pid=21251
+2021-07-01T17:49:05.501+0300 [DEBUG] provider: plugin exited
+2021-07-01T17:49:05.506+0300 [INFO]  backend/local: apply calling Apply
+2021-07-01T17:49:05.506+0300 [INFO]  terraform: building graph: GraphTypeApply
+2021-07-01T17:49:05.507+0300 [DEBUG] Resource state not found for node "vcd_vm.test-vm", instance vcd_vm.test-vm
+2021-07-01T17:49:05.508+0300 [DEBUG] ProviderTransformer: "vcd_vm.test-vm (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/terraform-providers/vcd"]
+2021-07-01T17:49:05.508+0300 [DEBUG] ProviderTransformer: "vcd_vm.test-vm" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/terraform-providers/vcd"]
+2021-07-01T17:49:05.508+0300 [DEBUG] ProviderTransformer: "data.vcd_org.my-org (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/terraform-providers/vcd"]
+2021-07-01T17:49:05.508+0300 [DEBUG] ProviderTransformer: "data.vcd_org_vdc.my-org-vdc (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/terraform-providers/vcd"]
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.FS_CPU" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "data.vcd_org.my-org (expand)" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.IOPS_FS" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.MASTER_COUNT" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.VCD_TEMPLATE_VM_FS" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_NAME" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.FIRST_SSH_PORT_EXTERNAL" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/terraform-providers/vcd\"]" references: [var.VCD_USER var.VCD_PASSWORD var.VCD_URL var.VCD_ORG var.VCD_MAX_RETRY_TIMEOUT var.VCD_VDC]
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "data.vcd_org_vdc.my-org-vdc (expand)" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_DNS1" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.VCD_ORG" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.VCD_USER" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.VCD_PASSWORD" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.EDGE_GATEWAY_NAME" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.EXTERNAL_IP" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "output.provider_vdc" references: [data.vcd_org_vdc.my-org-vdc (expand)]
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.HOSTNAME_PREFIX" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.WORKER_COUNT" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_GATEWAY_IP" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "output.id" references: [data.vcd_org.my-org (expand)]
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.DISK_WORKER_CONTAINERS_SIZE" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_SUBNET_PREFIX" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.EXTERNAL_NET_NAME" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_FS" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.VAPP_NAME" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.K8S_API_PORT_EXTERNAL" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.VCD_CATALOG_NAME" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.IP_MONITORING" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.FS_RAM" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_WORKER" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_NETMASK" references: []
+2021-07-01T17:49:05.510+0300 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_MASTER" references: []
+2021-07-01T17:49:05.511+0300 [DEBUG] ReferenceTransformer: "var.K8S_API_PORT_INTERNAL" references: []
+2021-07-01T17:49:05.511+0300 [DEBUG] ReferenceTransformer: "var.WORKER_CPU" references: []
+2021-07-01T17:49:05.511+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_STATIC_IP_POOL_START" references: []
+2021-07-01T17:49:05.511+0300 [DEBUG] ReferenceTransformer: "var.VCD_VDC" references: []
+2021-07-01T17:49:05.511+0300 [DEBUG] ReferenceTransformer: "var.VCD_URL" references: []
+2021-07-01T17:49:05.511+0300 [DEBUG] ReferenceTransformer: "var.DISK_FS_DATA_SIZE" references: []
+2021-07-01T17:49:05.511+0300 [DEBUG] ReferenceTransformer: "vcd_vm.test-vm (expand)" references: []
+2021-07-01T17:49:05.511+0300 [DEBUG] ReferenceTransformer: "var.VCD_TEMPLATE_VM_M" references: []
+2021-07-01T17:49:05.511+0300 [DEBUG] ReferenceTransformer: "var.FS_COUNT" references: []
+2021-07-01T17:49:05.511+0300 [DEBUG] ReferenceTransformer: "vcd_vm.test-vm" references: []
+2021-07-01T17:49:05.511+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_SUBNET" references: []
+2021-07-01T17:49:05.511+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_DNS2" references: []
+2021-07-01T17:49:05.511+0300 [DEBUG] ReferenceTransformer: "var.MASTER_RAM" references: []
+2021-07-01T17:49:05.511+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_STATIC_IP_POOL_END" references: []
+2021-07-01T17:49:05.511+0300 [DEBUG] ReferenceTransformer: "var.IOPS_WORKER" references: []
+2021-07-01T17:49:05.511+0300 [DEBUG] ReferenceTransformer: "var.VCD_MAX_RETRY_TIMEOUT" references: []
+2021-07-01T17:49:05.511+0300 [DEBUG] ReferenceTransformer: "var.WORKER_RAM" references: []
+2021-07-01T17:49:05.511+0300 [DEBUG] ReferenceTransformer: "var.K8S_API_FLOATING_ADDRESS" references: []
+2021-07-01T17:49:05.511+0300 [DEBUG] ReferenceTransformer: "var.MASTER_CPU" references: []
+2021-07-01T17:49:05.511+0300 [DEBUG] ReferenceTransformer: "var.VCD_TEMPLATE_VM_W" references: []
+2021-07-01T17:49:05.514+0300 [DEBUG] pruneUnusedNodes: data.vcd_org.my-org (expand) is no longer needed, removing
+2021-07-01T17:49:05.514+0300 [DEBUG] pruneUnusedNodes: data.vcd_org_vdc.my-org-vdc (expand) is no longer needed, removing
+2021-07-01T17:49:05.516+0300 [DEBUG] Starting graph walk: walkApply
+2021-07-01T17:49:05.518+0300 [DEBUG] created provider logger: level=debug
+2021-07-01T17:49:05.518+0300 [INFO]  provider: configuring client automatic mTLS
+2021-07-01T17:49:05.607+0300 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 args=[.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0]
+2021-07-01T17:49:05.607+0300 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 pid=21268
+2021-07-01T17:49:05.607+0300 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0
+2021-07-01T17:49:05.621+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: configuring server automatic mTLS: timestamp=2021-07-01T17:49:05.621+0300
+2021-07-01T17:49:05.695+0300 [DEBUG] provider.terraform-provider-vcd_v3.3.0: plugin address: address=/tmp/plugin594267155 network=unix timestamp=2021-07-01T17:49:05.695+0300
+2021-07-01T17:49:05.695+0300 [DEBUG] provider: using plugin: version=5
+2021-07-01T17:49:05.808+0300 [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/terraform-providers/vcd\"]" changed the config value, but that value is unused
+2021-07-01T17:49:06.069+0300 [WARN]  Provider "registry.terraform.io/terraform-providers/vcd" produced an invalid plan for vcd_vm.test-vm, but we are tolerating it because it is using the legacy plugin SDK.
     The following problems may be the cause of any confusing errors from downstream operations:
-      - .memory_hot_add_enabled: planned value cty.False does not match config value cty.NullVal(cty.Bool)
-      - .accept_all_eulas: planned value cty.True does not match config value cty.NullVal(cty.Bool)
-      - .power_on: planned value cty.True does not match config value cty.NullVal(cty.Bool)
-      - .prevent_update_power_off: planned value cty.False does not match config value cty.NullVal(cty.Bool)
-      - .expose_hardware_virtualization: planned value cty.False does not match config value cty.NullVal(cty.Bool)
-      - .cpu_hot_add_enabled: planned value cty.False does not match config value cty.NullVal(cty.Bool)
+      - .prevent_update_power_off: planned value cty.False for a non-computed attribute
+      - .power_on: planned value cty.True for a non-computed attribute
+      - .cpu_hot_add_enabled: planned value cty.False for a non-computed attribute
+      - .memory_hot_add_enabled: planned value cty.False for a non-computed attribute
+      - .accept_all_eulas: planned value cty.True for a non-computed attribute
+      - .expose_hardware_virtualization: planned value cty.False for a non-computed attribute
       - .customization: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
-2020/12/15 13:57:57 [DEBUG] EvalApply: ProviderMeta config value set
-2020/12/15 13:57:57 [DEBUG] vcd_vapp_vm.vm: applying the planned Create change
-2020-12-15T13:57:57.562+0300 [DEBUG] plugin.terraform-provider-vcd_v3.0.0: 2020/12/15 13:57:57 [DEBUG] setting computed for "internal_disk" from ComputedKeys
-2020-12-15T13:57:57.562+0300 [DEBUG] plugin.terraform-provider-vcd_v3.0.0: 2020/12/15 13:57:57 [DEBUG] setting computed for "customization" from ComputedKeys
-2020-12-15T13:57:57.562+0300 [DEBUG] plugin.terraform-provider-vcd_v3.0.0: 2020/12/15 13:57:57 [DEBUG] [VM create] started
-2020-12-15T13:57:57.562+0300 [DEBUG] plugin.terraform-provider-vcd_v3.0.0: 2020/12/15 13:57:57 [DEBUG] Locking "org:TEST-API-TEST-VC7|vdc:TEST-API-TEST-VC7|vapp:k8s-app"
-2020-12-15T13:57:57.562+0300 [DEBUG] plugin.terraform-provider-vcd_v3.0.0: 2020/12/15 13:57:57 [DEBUG] Locked "org:TEST-API-TEST-VC7|vdc:TEST-API-TEST-VC7|vapp:k8s-app"
-2020-12-15T13:58:00.527+0300 [DEBUG] plugin.terraform-provider-vcd_v3.0.0: 2020/12/15 13:58:00 [TRACE] Creating VM: vm
-2020-12-15T13:58:02.634+0300 [DEBUG] plugin.terraform-provider-vcd_v3.0.0: 2020/12/15 13:58:02 [DEBUG] Unlocking "org:TEST-API-TEST-VC7|vdc:TEST-API-TEST-VC7|vapp:k8s-app"
-2020-12-15T13:58:02.634+0300 [DEBUG] plugin.terraform-provider-vcd_v3.0.0: 2020/12/15 13:58:02 [DEBUG] Unlocked "org:TEST-API-TEST-VC7|vdc:TEST-API-TEST-VC7|vapp:k8s-app"
-2020/12/15 13:58:02 [DEBUG] vcd_vapp_vm.vm: apply errored, but we're indicating that via the Error pointer rather than returning it: [VM creation] error adding VM: error instantiating a new VM: API Error: 400: [ fd936b0a-13ac-4ce6-addf-f13b3b0f99cb ] Requested disk iops 0 for virtual machine "vm" exceeds maximum allowed iops 3,501.
-2020-12-15T13:58:02.665+0300 [DEBUG] plugin: plugin process exited: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.0.0/linux_amd64/terraform-provider-vcd_v3.0.0 pid=1839647
-2020-12-15T13:58:02.665+0300 [DEBUG] plugin: plugin exited
+2021-07-01T17:49:06.070+0300 [INFO]  Starting apply for vcd_vm.test-vm
+2021-07-01T17:49:06.070+0300 [DEBUG] vcd_vm.test-vm: applying the planned Create change
+2021-07-01T17:49:06.072+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: 2021/07/01 17:49:06 [DEBUG] setting computed for "internal_disk" from ComputedKeys: timestamp=2021-07-01T17:49:06.072+0300
+2021-07-01T17:49:06.072+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: 2021/07/01 17:49:06 [DEBUG] setting computed for "customization" from ComputedKeys: timestamp=2021-07-01T17:49:06.072+0300
+2021-07-01T17:49:06.332+0300 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-07-01T17:49:06.334+0300 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 pid=21268
+2021-07-01T17:49:06.334+0300 [DEBUG] provider: plugin exited
+2021-07-01T17:53:21.844+0300 [DEBUG] Adding temp file log sink: /tmp/terraform-log509526749
+2021-07-01T17:53:21.844+0300 [INFO]  Terraform version: 1.0.1
+2021-07-01T17:53:21.844+0300 [INFO]  Go runtime version: go1.16.4
+2021-07-01T17:53:21.844+0300 [INFO]  CLI args: []string{"/root/.terraform.versions/terraform_1.0.1", "-v"}
+2021-07-01T17:53:21.844+0300 [DEBUG] Attempting to open CLI config file: /root/.terraformrc
+2021-07-01T17:53:21.844+0300 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2021-07-01T17:53:21.844+0300 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2021-07-01T17:53:21.844+0300 [DEBUG] ignoring non-existing provider search directory /root/.terraform.d/plugins
+2021-07-01T17:53:21.844+0300 [DEBUG] ignoring non-existing provider search directory /root/.local/share/terraform/plugins
+2021-07-01T17:53:21.844+0300 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2021-07-01T17:53:21.844+0300 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2021-07-01T17:53:21.845+0300 [INFO]  CLI command args: []string{"version", "-v"}
