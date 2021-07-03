@@ -1,0 +1,997 @@
+2021-07-03T12:10:30.466+0300 [DEBUG] Adding temp file log sink: /tmp/terraform-log883732942
+2021-07-03T12:10:30.466+0300 [INFO]  Terraform version: 1.0.0
+2021-07-03T12:10:30.466+0300 [INFO]  Go runtime version: go1.16.4
+2021-07-03T12:10:30.466+0300 [INFO]  CLI args: []string{"/home/user/.terraform.versions/terraform_1.0.0", "apply", "--auto-approve"}
+2021-07-03T12:10:30.466+0300 [DEBUG] Attempting to open CLI config file: /home/user/.terraformrc
+2021-07-03T12:10:30.466+0300 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2021-07-03T12:10:30.466+0300 [DEBUG] checking for credentials in "/home/user/.terraform.d/plugins"
+2021-07-03T12:10:30.466+0300 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2021-07-03T12:10:30.466+0300 [DEBUG] will search for provider plugins in /home/user/.terraform.d/plugins
+2021-07-03T12:10:30.466+0300 [DEBUG] ignoring non-existing provider search directory /home/user/.local/share/terraform/plugins
+2021-07-03T12:10:30.466+0300 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2021-07-03T12:10:30.466+0300 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2021-07-03T12:10:30.467+0300 [INFO]  CLI command args: []string{"apply", "--auto-approve"}
+2021-07-03T12:10:30.471+0300 [INFO]  AWS Auth provider used: "StaticProvider"
+2021-07-03T12:10:30.590+0300 [DEBUG] checking for provisioner in "."
+2021-07-03T12:10:30.590+0300 [DEBUG] checking for provisioner in "/home/user/.terraform.versions"
+2021-07-03T12:10:30.590+0300 [DEBUG] checking for provisioner in "/home/user/.terraform.d/plugins"
+2021-07-03T12:10:30.591+0300 [INFO]  Failed to read plugin lock file .terraform/plugins/linux_amd64/lock.json: open .terraform/plugins/linux_amd64/lock.json: no such file or directory
+2021-07-03T12:10:30.591+0300 [INFO]  backend/local: starting Apply operation
+2021-07-03T12:10:30.591+0300 [DEBUG] [aws-sdk-go] DEBUG: Request s3/ListObjects Details:
+
+-----------------------------------------------------
+2021-07-03T12:10:30.854+0300 [DEBUG] [aws-sdk-go]
+2021-07-03T12:10:30.897+0300 [DEBUG] created provider logger: level=debug
+2021-07-03T12:10:30.897+0300 [INFO]  provider: configuring client automatic mTLS
+2021-07-03T12:10:30.932+0300 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 args=[.terraform/providers/registry.terraform.io/vmware/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0]
+2021-07-03T12:10:30.932+0300 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 pid=378616
+2021-07-03T12:10:30.933+0300 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0
+2021-07-03T12:10:30.938+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: configuring server automatic mTLS: timestamp=2021-07-03T12:10:30.938+0300
+2021-07-03T12:10:30.972+0300 [DEBUG] provider: using plugin: version=5
+2021-07-03T12:10:30.973+0300 [DEBUG] provider.terraform-provider-vcd_v3.3.0: plugin address: address=/tmp/plugin774107296 network=unix timestamp=2021-07-03T12:10:30.972+0300
+2021-07-03T12:10:31.026+0300 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-07-03T12:10:31.027+0300 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 pid=378616
+2021-07-03T12:10:31.027+0300 [DEBUG] provider: plugin exited
+2021-07-03T12:10:31.027+0300 [DEBUG] created provider logger: level=debug
+2021-07-03T12:10:31.027+0300 [INFO]  provider: configuring client automatic mTLS
+2021-07-03T12:10:31.061+0300 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 args=[.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0]
+2021-07-03T12:10:31.062+0300 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 pid=378630
+2021-07-03T12:10:31.062+0300 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0
+2021-07-03T12:10:31.066+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: configuring server automatic mTLS: timestamp=2021-07-03T12:10:31.066+0300
+2021-07-03T12:10:31.101+0300 [DEBUG] provider.terraform-provider-vcd_v3.3.0: plugin address: address=/tmp/plugin189309112 network=unix timestamp=2021-07-03T12:10:31.101+0300
+2021-07-03T12:10:31.101+0300 [DEBUG] provider: using plugin: version=5
+2021-07-03T12:10:31.153+0300 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-07-03T12:10:31.154+0300 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/terraform-providers/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 pid=378630
+2021-07-03T12:10:31.154+0300 [DEBUG] provider: plugin exited
+2021-07-03T12:10:31.154+0300 [INFO]  terraform: building graph: GraphTypeValidate
+2021-07-03T12:10:31.155+0300 [DEBUG] ProviderTransformer: "vcd_vm.test-vm" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/vmware/vcd"]
+2021-07-03T12:10:31.155+0300 [DEBUG] ProviderTransformer: "data.vcd_org_vdc.my-org-vdc" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/vmware/vcd"]
+2021-07-03T12:10:31.155+0300 [DEBUG] ProviderTransformer: "data.vcd_org.my-org" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/vmware/vcd"]
+2021-07-03T12:10:31.155+0300 [DEBUG] ProviderTransformer: "data.vcd_role.my-role" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/vmware/vcd"]
+2021-07-03T12:10:31.155+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_SUBNET" references: []
+2021-07-03T12:10:31.155+0300 [DEBUG] ReferenceTransformer: "var.VCD_TEMPLATE_VM_FS" references: []
+2021-07-03T12:10:31.155+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_STATIC_IP_POOL_END" references: []
+2021-07-03T12:10:31.155+0300 [DEBUG] ReferenceTransformer: "var.MASTER_CPU" references: []
+2021-07-03T12:10:31.155+0300 [DEBUG] ReferenceTransformer: "var.IP_MONITORING" references: []
+2021-07-03T12:10:31.155+0300 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_MASTER" references: []
+2021-07-03T12:10:31.155+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_NETMASK" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "output.role" references: [data.vcd_role.my-role]
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "output.id" references: [data.vcd_org.my-org]
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_DNS1" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.MASTER_COUNT" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.VCD_VDC" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "vcd_vm.test-vm" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.WORKER_RAM" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.VCD_URL" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.DISK_FS_DATA_SIZE" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.IOPS_WORKER" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.MASTER_RAM" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.VCD_ORG" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_STATIC_IP_POOL_START" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "data.vcd_org_vdc.my-org-vdc" references: [var.VCD_ORG var.VCD_VDC]
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.VAPP_NAME" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.EXTERNAL_IP" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.FS_RAM" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.EDGE_GATEWAY_NAME" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.HOSTNAME_PREFIX" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.VCD_USER" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.VCD_PASSWORD" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_NAME" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "data.vcd_org.my-org" references: [var.VCD_ORG]
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_SUBNET_PREFIX" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.K8S_API_FLOATING_ADDRESS" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.VCD_TEMPLATE_VM_M" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.EXTERNAL_NET_NAME" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.DISK_WORKER_CONTAINERS_SIZE" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.VCD_MAX_RETRY_TIMEOUT" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "output.provider_vdc" references: [data.vcd_org_vdc.my-org-vdc]
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "data.vcd_role.my-role" references: [var.VCD_ORG]
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.K8S_API_PORT_INTERNAL" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.IOPS_FS" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.FIRST_SSH_PORT_EXTERNAL" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.VCD_CATALOG_NAME" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_WORKER" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.WORKER_CPU" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.FS_CPU" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_DNS2" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.VCD_TEMPLATE_VM_W" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_GATEWAY_IP" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_FS" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.FS_COUNT" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.WORKER_COUNT" references: []
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/vmware/vcd\"]" references: [var.VCD_ORG var.VCD_PASSWORD var.VCD_URL var.VCD_USER var.VCD_VDC var.VCD_MAX_RETRY_TIMEOUT]
+2021-07-03T12:10:31.156+0300 [DEBUG] ReferenceTransformer: "var.K8S_API_PORT_EXTERNAL" references: []
+2021-07-03T12:10:31.158+0300 [DEBUG] Starting graph walk: walkValidate
+2021-07-03T12:10:31.159+0300 [DEBUG] created provider logger: level=debug
+2021-07-03T12:10:31.159+0300 [INFO]  provider: configuring client automatic mTLS
+2021-07-03T12:10:31.194+0300 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 args=[.terraform/providers/registry.terraform.io/vmware/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0]
+2021-07-03T12:10:31.194+0300 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 pid=378643
+2021-07-03T12:10:31.194+0300 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0
+2021-07-03T12:10:31.200+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: configuring server automatic mTLS: timestamp=2021-07-03T12:10:31.200+0300
+2021-07-03T12:10:31.235+0300 [DEBUG] provider: using plugin: version=5
+2021-07-03T12:10:31.235+0300 [DEBUG] provider.terraform-provider-vcd_v3.3.0: plugin address: address=/tmp/plugin618788372 network=unix timestamp=2021-07-03T12:10:31.235+0300
+2021-07-03T12:10:31.301+0300 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-07-03T12:10:31.308+0300 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 pid=378643
+2021-07-03T12:10:31.308+0300 [DEBUG] provider: plugin exited
+2021-07-03T12:10:31.308+0300 [INFO]  backend/local: apply calling Plan
+2021-07-03T12:10:31.308+0300 [INFO]  terraform: building graph: GraphTypePlan
+2021-07-03T12:10:31.313+0300 [DEBUG] ProviderTransformer: "data.vcd_role.my-role (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/vmware/vcd"]
+2021-07-03T12:10:31.313+0300 [DEBUG] ProviderTransformer: "vcd_vm.test-vm (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/vmware/vcd"]
+2021-07-03T12:10:31.313+0300 [DEBUG] ProviderTransformer: "data.vcd_org.my-org (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/vmware/vcd"]
+2021-07-03T12:10:31.313+0300 [DEBUG] ProviderTransformer: "data.vcd_org_vdc.my-org-vdc (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/vmware/vcd"]
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.WORKER_COUNT" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.VAPP_NAME" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.K8S_API_FLOATING_ADDRESS" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.WORKER_RAM" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "data.vcd_org_vdc.my-org-vdc (expand)" references: [var.VCD_ORG var.VCD_VDC]
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.K8S_API_PORT_INTERNAL" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.VCD_TEMPLATE_VM_W" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.VCD_CATALOG_NAME" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.VCD_USER" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_NAME" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.FS_RAM" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_MASTER" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "data.vcd_role.my-role (expand)" references: [var.VCD_ORG]
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.VCD_ORG" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_SUBNET" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_FS" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_STATIC_IP_POOL_START" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "output.role" references: [data.vcd_role.my-role (expand)]
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "output.id" references: [data.vcd_org.my-org (expand)]
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.EXTERNAL_IP" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.HOSTNAME_PREFIX" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/vmware/vcd\"]" references: [var.VCD_URL var.VCD_USER var.VCD_VDC var.VCD_MAX_RETRY_TIMEOUT var.VCD_ORG var.VCD_PASSWORD]
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "vcd_vm.test-vm (expand)" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_GATEWAY_IP" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_SUBNET_PREFIX" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.MASTER_COUNT" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "data.vcd_org.my-org (expand)" references: [var.VCD_ORG]
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.VCD_TEMPLATE_VM_FS" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_STATIC_IP_POOL_END" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.VCD_URL" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.FS_COUNT" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.EDGE_GATEWAY_NAME" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.MASTER_CPU" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.VCD_MAX_RETRY_TIMEOUT" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.VCD_TEMPLATE_VM_M" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "output.provider_vdc" references: [data.vcd_org_vdc.my-org-vdc (expand)]
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_DNS1" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.FIRST_SSH_PORT_EXTERNAL" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.IOPS_FS" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.DISK_FS_DATA_SIZE" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.FS_CPU" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.VCD_PASSWORD" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.IP_MONITORING" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.DISK_WORKER_CONTAINERS_SIZE" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.IOPS_WORKER" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_DNS2" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.VCD_VDC" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_NETMASK" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.EXTERNAL_NET_NAME" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.MASTER_RAM" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.K8S_API_PORT_EXTERNAL" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_WORKER" references: []
+2021-07-03T12:10:31.314+0300 [DEBUG] ReferenceTransformer: "var.WORKER_CPU" references: []
+2021-07-03T12:10:31.316+0300 [DEBUG] Starting graph walk: walkPlan
+2021-07-03T12:10:31.316+0300 [DEBUG] created provider logger: level=debug
+2021-07-03T12:10:31.316+0300 [INFO]  provider: configuring client automatic mTLS
+2021-07-03T12:10:31.352+0300 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 args=[.terraform/providers/registry.terraform.io/vmware/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0]
+2021-07-03T12:10:31.352+0300 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 pid=378670
+2021-07-03T12:10:31.352+0300 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0
+2021-07-03T12:10:31.357+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: configuring server automatic mTLS: timestamp=2021-07-03T12:10:31.357+0300
+2021-07-03T12:10:31.391+0300 [DEBUG] provider: using plugin: version=5
+2021-07-03T12:10:31.391+0300 [DEBUG] provider.terraform-provider-vcd_v3.3.0: plugin address: address=/tmp/plugin999653680 network=unix timestamp=2021-07-03T12:10:31.391+0300
+2021-07-03T12:10:31.449+0300 [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/vmware/vcd\"]" changed the config value, but that value is unused
+2021-07-03T12:10:33.607+0300 [INFO]  ReferenceTransformer: reference not found: "var.VCD_ORG"
+2021-07-03T12:10:33.607+0300 [INFO]  ReferenceTransformer: reference not found: "var.VCD_VDC"
+2021-07-03T12:10:33.607+0300 [DEBUG] ReferenceTransformer: "data.vcd_org_vdc.my-org-vdc" references: []
+2021-07-03T12:10:33.607+0300 [DEBUG] Resource instance state not found for node "vcd_vm.test-vm", instance vcd_vm.test-vm
+2021-07-03T12:10:33.608+0300 [DEBUG] ReferenceTransformer: "vcd_vm.test-vm" references: []
+2021-07-03T12:10:33.609+0300 [INFO]  ReferenceTransformer: reference not found: "var.VCD_ORG"
+2021-07-03T12:10:33.609+0300 [DEBUG] ReferenceTransformer: "data.vcd_role.my-role" references: []
+2021-07-03T12:10:33.609+0300 [DEBUG] refresh: vcd_vm.test-vm: no state, so not refreshing
+2021-07-03T12:10:33.610+0300 [INFO]  ReferenceTransformer: reference not found: "var.VCD_ORG"
+2021-07-03T12:10:33.610+0300 [DEBUG] ReferenceTransformer: "data.vcd_org.my-org" references: []
+2021-07-03T12:10:33.613+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: 2021/07/03 12:10:33 Reading Org with id g-K8S-SPB-NSXT-2: timestamp=2021-07-03T12:10:33.613+0300
+2021-07-03T12:10:33.617+0300 [WARN]  Provider "registry.terraform.io/vmware/vcd" produced an invalid plan for vcd_vm.test-vm, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .power_on: planned value cty.True for a non-computed attribute
+      - .prevent_update_power_off: planned value cty.False for a non-computed attribute
+      - .memory_hot_add_enabled: planned value cty.False for a non-computed attribute
+      - .expose_hardware_virtualization: planned value cty.False for a non-computed attribute
+      - .cpu_hot_add_enabled: planned value cty.False for a non-computed attribute
+      - .accept_all_eulas: planned value cty.True for a non-computed attribute
+      - .customization: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2021-07-03T12:10:37.462+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: 2021/07/03 12:10:37 Org with id g-K8S-SPB-NSXT-2 found: timestamp=2021-07-03T12:10:37.461+0300
+2021-07-03T12:10:41.144+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: 2021/07/03 12:10:41 [TRACE] vdc read completed: &types.AdminVdc{Xmlns:"http://www.vmware.com/vcloud/v1.5", Vdc:types.Vdc{HREF:"https://cloud.com/api/vdc/fc90b202-fb19-4d28-a3ec-114dfe5e780c", Type:"application/vnd.vmware.vcloud.vdc+xml", ID:"urn:vcloud:vdc:fc90b202-fb19-4d28-a3ec-114dfe5e780c", OperationKey:"", Name:"g-K8S-SPB-NSXT-2_vDC", Status:1, Link:types.LinkList{(*types.Link)(0xc0005d34f0), (*types.Link)(0xc0005d3540), (*types.Link)(0xc0005d3630), (*types.Link)(0xc0005d3680), (*types.Link)(0xc0005d36d0), (*types.Link)(0xc0005d3720), (*types.Link)(0xc0005d3770), (*types.Link)(0xc0005d37c0), (*types.Link)(0xc0005d3810), (*types.Link)(0xc0005d3860), (*types.Link)(0xc0005d38b0), (*types.Link)(0xc0005d3900), (*types.Link)(0xc0005d3950), (*types.Link)(0xc0005d39a0), (*types.Link)(0xc0005d39f0), (*types.Link)(0xc0005d3a40), (*types.Link)(0xc0005d3a90), (*types.Link)(0xc0005d3ae0), (*types.Link)(0xc0005d3b30), (*types.Link)(0xc0005d3b80), (*types.Link)(0xc0005d3bd0), (*types.Link)(0xc0005d3c20), (*types.Link)(0xc0005d3c70), (*types.Link)(0xc0005d3cc0), (*types.Link)(0xc0005d3d10), (*types.Link)(0xc0005d3d60), (*types.Link)(0xc0005d3db0), (*types.Link)(0xc0005d3e00), (*types.Link)(0xc0005d3e50), (*types.Link)(0xc0005d3ea0), (*types.Link)(0xc0005d3ef0), (*types.Link)(0xc0005d3f40), (*types.Link)(0xc0005d3f90), (*types.Link)(0xc000450000), (*types.Link)(0xc000450050), (*types.Link)(0xc0004500a0), (*types.Link)(0xc0004501e0), (*types.Link)(0xc000450230), (*types.Link)(0xc000450280), (*types.Link)(0xc0004502d0), (*types.Link)(0xc000450320), (*types.Link)(0xc000450370), (*types.Link)(0xc0004503c0), (*types.Link)(0xc000450550), (*types.Link)(0xc0004505f0), (*types.Link)(0xc000450640), (*types.Link)(0xc000450690), (*types.Link)(0xc0004507d0), (*types.Link)(0xc000450820), (*types.Link)(0xc000450870), (*types.Link)(0xc0004508c0), (*types.Link)(0xc000450910), (*types.Link)(0xc000450960), (*types.Link)(0xc0004509b0), (*types.Link)(0xc000450a00), (*types.Link)(0xc000450a50), (*types.Link)(0xc000450aa0), (*types.Link)(0xc000450af0)}, Description:"", Tasks:(*types.TasksInProgress)(nil), AllocationModel:"AllocationPool", ComputeCapacity:[]*types.ComputeCapacity{(*types.ComputeCapacity)(0xc0004607f0)}, ResourceEntities:[]*types.ResourceEntities{(*types.ResourceEntities)(0xc00057afd8)}, AvailableNetworks:[]*types.AvailableNetworks{(*types.AvailableNetworks)(0xc00057b050)}, Capabilities:[]*types.Capabilities{(*types.Capabilities)(0xc0003ec180)}, NicQuota:0, NetworkQuota:100, UsedNetworkCount:0, VMQuota:100, IsEnabled:true, VdcStorageProfiles:(*types.VdcStorageProfiles)(0xc00057b698), DefaultComputePolicy:(*types.Reference)(0xc000201800)}, VCpuInMhz2:(*int64)(0xc00021b640), ResourceGuaranteedMemory:(*float64)(nil), ResourceGuaranteedCpu:(*float64)(nil), VCpuInMhz:(*int64)(nil), IsThinProvision:(*bool)(nil), NetworkPoolReference:(*types.Reference)(nil), ProviderVdcReference:(*types.Reference)(nil), ResourcePoolRefs:(*types.VimObjectRefs)(nil), UsesFastProvisioning:(*bool)(nil), OverCommitAllowed:false, VmDiscoveryEnabled:false, IsElastic:(*bool)(nil), IncludeMemoryOverhead:(*bool)(nil), UniversalNetworkPoolReference:(*types.Reference)(nil)}: timestamp=2021-07-03T12:10:41.143+0300
+2021-07-03T12:10:41.150+0300 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-07-03T12:10:41.152+0300 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 pid=378670
+2021-07-03T12:10:41.152+0300 [DEBUG] provider: plugin exited
+2021-07-03T12:10:41.156+0300 [INFO]  backend/local: apply calling Apply
+2021-07-03T12:10:41.156+0300 [INFO]  terraform: building graph: GraphTypeApply
+2021-07-03T12:10:41.157+0300 [DEBUG] Resource state not found for node "vcd_vm.test-vm", instance vcd_vm.test-vm
+2021-07-03T12:10:41.157+0300 [DEBUG] ProviderTransformer: "vcd_vm.test-vm (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/vmware/vcd"]
+2021-07-03T12:10:41.157+0300 [DEBUG] ProviderTransformer: "data.vcd_role.my-role (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/vmware/vcd"]
+2021-07-03T12:10:41.157+0300 [DEBUG] ProviderTransformer: "data.vcd_org.my-org (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/vmware/vcd"]
+2021-07-03T12:10:41.157+0300 [DEBUG] ProviderTransformer: "vcd_vm.test-vm" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/vmware/vcd"]
+2021-07-03T12:10:41.157+0300 [DEBUG] ProviderTransformer: "data.vcd_org_vdc.my-org-vdc (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/vmware/vcd"]
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.VCD_VDC" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.K8S_API_FLOATING_ADDRESS" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "output.provider_vdc" references: [data.vcd_org_vdc.my-org-vdc (expand)]
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.EDGE_GATEWAY_NAME" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_DNS2" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "output.role" references: [data.vcd_role.my-role (expand)]
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_NETMASK" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_NAME" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.FS_CPU" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.VCD_USER" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.FS_RAM" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "data.vcd_org.my-org (expand)" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.DISK_FS_DATA_SIZE" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.WORKER_COUNT" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_SUBNET" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.VCD_TEMPLATE_VM_M" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_STATIC_IP_POOL_END" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.MASTER_CPU" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_WORKER" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.VCD_CATALOG_NAME" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.IP_MONITORING" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.WORKER_CPU" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "output.id" references: [data.vcd_org.my-org (expand)]
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.EXTERNAL_NET_NAME" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.IOPS_FS" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_SUBNET_PREFIX" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.WORKER_RAM" references: []
+2021-07-03T12:10:41.158+0300 [DEBUG] ReferenceTransformer: "var.K8S_API_PORT_EXTERNAL" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "var.VAPP_NAME" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "var.MASTER_RAM" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "var.VCD_TEMPLATE_VM_W" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_STATIC_IP_POOL_START" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_FS" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "var.FS_COUNT" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/vmware/vcd\"]" references: [var.VCD_MAX_RETRY_TIMEOUT var.VCD_ORG var.VCD_PASSWORD var.VCD_USER var.VCD_VDC var.VCD_URL]
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "var.DISK_WORKER_CONTAINERS_SIZE" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "var.HOSTNAME_PREFIX" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "var.MASTER_COUNT" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "vcd_vm.test-vm" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "var.K8S_API_PORT_INTERNAL" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "var.FIRST_SSH_PORT_EXTERNAL" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "var.STORAGE_POLICY_MASTER" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_DNS1" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "var.VCD_MAX_RETRY_TIMEOUT" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "var.VCD_URL" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "data.vcd_org_vdc.my-org-vdc (expand)" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "var.VCD_ORG" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "var.EXTERNAL_IP" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "var.VCD_PASSWORD" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "vcd_vm.test-vm (expand)" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "var.VCD_TEMPLATE_VM_FS" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "var.INTERNAL_NET_GATEWAY_IP" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "var.IOPS_WORKER" references: []
+2021-07-03T12:10:41.159+0300 [DEBUG] ReferenceTransformer: "data.vcd_role.my-role (expand)" references: []
+2021-07-03T12:10:41.160+0300 [DEBUG] pruneUnusedNodes: data.vcd_role.my-role (expand) is no longer needed, removing
+2021-07-03T12:10:41.160+0300 [DEBUG] pruneUnusedNodes: data.vcd_org.my-org (expand) is no longer needed, removing
+2021-07-03T12:10:41.160+0300 [DEBUG] pruneUnusedNodes: data.vcd_org_vdc.my-org-vdc (expand) is no longer needed, removing
+2021-07-03T12:10:41.161+0300 [DEBUG] Starting graph walk: walkApply
+2021-07-03T12:10:41.163+0300 [DEBUG] created provider logger: level=debug
+2021-07-03T12:10:41.163+0300 [INFO]  provider: configuring client automatic mTLS
+2021-07-03T12:10:41.209+0300 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 args=[.terraform/providers/registry.terraform.io/vmware/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0]
+2021-07-03T12:10:41.210+0300 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 pid=378719
+2021-07-03T12:10:41.210+0300 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0
+2021-07-03T12:10:41.215+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: configuring server automatic mTLS: timestamp=2021-07-03T12:10:41.215+0300
+2021-07-03T12:10:41.247+0300 [DEBUG] provider.terraform-provider-vcd_v3.3.0: plugin address: network=unix address=/tmp/plugin794484161 timestamp=2021-07-03T12:10:41.247+0300
+2021-07-03T12:10:41.247+0300 [DEBUG] provider: using plugin: version=5
+2021-07-03T12:10:41.303+0300 [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/vmware/vcd\"]" changed the config value, but that value is unused
+2021-07-03T12:10:45.016+0300 [WARN]  Provider "registry.terraform.io/vmware/vcd" produced an invalid plan for vcd_vm.test-vm, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .power_on: planned value cty.True for a non-computed attribute
+      - .prevent_update_power_off: planned value cty.False for a non-computed attribute
+      - .memory_hot_add_enabled: planned value cty.False for a non-computed attribute
+      - .expose_hardware_virtualization: planned value cty.False for a non-computed attribute
+      - .cpu_hot_add_enabled: planned value cty.False for a non-computed attribute
+      - .accept_all_eulas: planned value cty.True for a non-computed attribute
+      - .customization: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2021-07-03T12:10:45.016+0300 [INFO]  Starting apply for vcd_vm.test-vm
+2021-07-03T12:10:45.017+0300 [DEBUG] vcd_vm.test-vm: applying the planned Create change
+2021-07-03T12:10:45.019+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: 2021/07/03 12:10:45 [DEBUG] setting computed for "internal_disk" from ComputedKeys: timestamp=2021-07-03T12:10:45.019+0300
+2021-07-03T12:10:45.019+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: 2021/07/03 12:10:45 [DEBUG] setting computed for "customization" from ComputedKeys: timestamp=2021-07-03T12:10:45.019+0300
+2021-07-03T12:10:52.965+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: 2021/07/03 12:10:52 [TRACE] Creating VM: test-vm: timestamp=2021-07-03T12:10:52.965+0300
+2021-07-03T12:16:32.094+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: 2021/07/03 12:16:32 [DEBUG] [VM update] started without lock: timestamp=2021-07-03T12:16:32.094+0300
+2021-07-03T12:16:38.579+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: 2021/07/03 12:16:38 [TRACE] VM test-vm customization has changes: customization(false), computer_name(false), name(true): timestamp=2021-07-03T12:16:38.579+0300
+2021-07-03T12:19:18.787+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: 2021/07/03 12:19:18 [TRACE] VM test-vm has changes: memory(true), cpus(true), cpu_cores(false), power_on(true), disk(false), expose_hardware_virtualization(false), boot_image(false), hardware_version(false), os_type(false), description(false), cpu_hot_add_enabled(false), memory_hot_add_enabled(false), network(false): timestamp=2021-07-03T12:19:18.787+0300
+2021-07-03T12:19:18.787+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: 2021/07/03 12:19:18 [DEBUG] Un-deploying VM test-vm for offline update. Previous state POWERED_ON: timestamp=2021-07-03T12:19:18.787+0300
+2021-07-03T12:23:38.004+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: 2021/07/03 12:23:38 [DEBUG] Powering on VM test-vm after update. Previous state POWERED_OFF: timestamp=2021-07-03T12:23:38.004+0300
+2021-07-03T12:25:33.959+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: 2021/07/03 12:25:33 [DEBUG] [VM update] finished: timestamp=2021-07-03T12:25:33.959+0300
+2021-07-03T12:25:33.959+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: 2021/07/03 12:25:33 [DEBUG] [VM read] started with origin update: timestamp=2021-07-03T12:25:33.959+0300
+2021-07-03T12:25:38.463+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: 2021/07/03 12:25:38 [TRACE] Setting empty properties into statefile because no properties were specified: timestamp=2021-07-03T12:25:38.463+0300
+2021-07-03T12:25:38.763+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: 2021/07/03 12:25:38 [DEBUG] [VM read] finished with origin update: timestamp=2021-07-03T12:25:38.763+0300
+2021-07-03T12:25:38.763+0300 [INFO]  provider.terraform-provider-vcd_v3.3.0: 2021/07/03 12:25:38 [DEBUG] [VM create] finished: timestamp=2021-07-03T12:25:38.763+0300
+2021-07-03T12:25:38.771+0300 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-07-03T12:25:38.777+0300 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/vmware/vcd/3.3.0/linux_amd64/terraform-provider-vcd_v3.3.0 pid=378719
+2021-07-03T12:25:38.777+0300 [DEBUG] provider: plugin exited
+2021-07-03T12:25:38.789+0300 [DEBUG] Uploading remote state to S3: {
+  Body: buffer(0xc000c105a0),
+  Bucket: "terraform-tfstate",
+  ContentLength: 23467,
+  ContentType: "application/json",
+  Key: "g-K8S-SPB-NSXT-2/terraform.tfstate"
+}
+2021-07-03T12:25:38.791+0300 [DEBUG] [aws-sdk-go] DEBUG: Request s3/PutObject Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+PUT /g-K8S-SPB-NSXT-2/terraform.tfstate HTTP/1.1
+Host: terraform-tfstate.s3.g.ru
+User-Agent: aws-sdk-go/1.37.0 (go1.16.4; linux; amd64) APN/1.0 HashiCorp/1.0 Terraform/1.0.0
+Content-Length: 23467
+Authorization: AWS4-HMAC-SHA256 Credential=2b14ea8fa4e8bbd844c0/20210703/nord1/s3/aws4_request, SignedHeaders=content-length;content-md5;content-type;host;x-amz-content-sha256;x-amz-date, Signature=8b4692d7a2c278bb40684eedb44b383ee17151351a1dfcfd8d54138110cbdeff
+Content-Md5: GH6K/AV9UanidCR07HdjqA==
+Content-Type: application/json
+X-Amz-Content-Sha256: 01ed251cf2d26dcf6fefb938e4131059afcfb4216018e66e9103279b46ace974
+X-Amz-Date: 20210703T092538Z
+Accept-Encoding: gzip
+
+{
+  "version": 4,
+  "terraform_version": "1.0.0",
+  "serial": 22,
+  "lineage": "b7569856-93b7-e5d3-f98a-d932d5b09c33",
+  "outputs": {
+    "id": {
+      "value": {
+        "can_publish_catalogs": false,
+        "delay_after_power_on_seconds": 0,
+        "deployed_vm_quota": 0,
+        "description": "g-K8S-SPB-NSXT-2",
+        "full_name": "g-K8S-SPB-NSXT-2",
+        "id": "urn:vcloud:org:8d138d48-eaf3-4585-a976-3ace98a11356",
+        "is_enabled": true,
+        "name": "g-K8S-SPB-NSXT-2",
+        "stored_vm_quota": 0,
+        "vapp_lease": [
+          {
+            "delete_on_storage_lease_expiration": false,
+            "maximum_runtime_lease_in_sec": 0,
+            "maximum_storage_lease_in_sec": 0,
+            "power_off_on_runtime_lease_expiration": false
+          }
+        ],
+        "vapp_template_lease": [
+          {
+            "delete_on_storage_lease_expiration": false,
+            "maximum_storage_lease_in_sec": 0
+          }
+        ]
+      },
+      "type": [
+        "object",
+        {
+          "can_publish_catalogs": "bool",
+          "delay_after_power_on_seconds": "number",
+          "deployed_vm_quota": "number",
+          "description": "string",
+          "full_name": "string",
+          "id": "string",
+          "is_enabled": "bool",
+          "name": "string",
+          "stored_vm_quota": "number",
+          "vapp_lease": [
+            "list",
+            [
+              "object",
+              {
+                "delete_on_storage_lease_expiration": "bool",
+                "maximum_runtime_lease_in_sec": "number",
+                "maximum_storage_lease_in_sec": "number",
+                "power_off_on_runtime_lease_expiration": "bool"
+              }
+            ]
+          ],
+          "vapp_template_lease": [
+            "list",
+            [
+              "object",
+              {
+                "delete_on_storage_lease_expiration": "bool",
+                "maximum_storage_lease_in_sec": "number"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    "provider_vdc": {
+      "value": {
+        "allocation_model": "AllocationPool",
+        "allow_over_commit": null,
+        "compute_capacity": [
+          {
+            "cpu": [
+              {
+                "allocated": 80600,
+                "limit": 80600,
+                "reserved": 0,
+                "used": 0
+              }
+            ],
+            "memory": [
+              {
+                "allocated": 40960,
+                "limit": 40960,
+                "reserved": 20480,
+                "used": 0
+              }
+            ]
+          }
+        ],
+        "cpu_guaranteed": null,
+        "cpu_speed": null,
+        "default_vm_sizing_policy_id": "urn:vcloud:vdcComputePolicy:1608caf3-4318-4e7d-b93d-5ece33d6c5c0",
+        "description": "",
+        "elasticity": null,
+        "enable_fast_provisioning": null,
+        "enable_thin_provisioning": null,
+        "enable_vm_discovery": false,
+        "enabled": true,
+        "id": "urn:vcloud:vdc:fc90b202-fb19-4d28-a3ec-114dfe5e780c",
+        "include_vm_memory_overhead": null,
+        "memory_guaranteed": null,
+        "metadata": {},
+        "name": "g-K8S-SPB-NSXT-2_vDC",
+        "network_pool_name": null,
+        "network_quota": 100,
+        "nic_quota": 0,
+        "org": "g-K8S-SPB-NSXT-2",
+        "provider_vdc_name": null,
+        "storage_profile": [
+          {
+            "default": true,
+            "enabled": true,
+            "limit": 452608,
+            "name": "SSD1",
+            "storage_used_in_mb": 0
+          }
+        ],
+        "vm_quota": 100,
+        "vm_sizing_policy_ids": [
+          "urn:vcloud:vdcComputePolicy:1608caf3-4318-4e7d-b93d-5ece33d6c5c0"
+        ]
+      },
+      "type": [
+        "object",
+        {
+          "allocation_model": "string",
+          "allow_over_commit": "bool",
+          "compute_capacity": [
+            "list",
+            [
+              "object",
+              {
+                "cpu": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "allocated": "number",
+                      "limit": "number",
+                      "reserved": "number",
+                      "used": "number"
+                    }
+                  ]
+                ],
+                "memory": [
+                  "list",
+                  [
+                    "object",
+                    {
+                      "allocated": "number",
+                      "limit": "number",
+                      "reserved": "number",
+                      "used": "number"
+                    }
+                  ]
+                ]
+              }
+            ]
+          ],
+          "cpu_guaranteed": "number",
+          "cpu_speed": "number",
+          "default_vm_sizing_policy_id": "string",
+          "description": "string",
+          "elasticity": "bool",
+          "enable_fast_provisioning": "bool",
+          "enable_thin_provisioning": "bool",
+          "enable_vm_discovery": "bool",
+          "enabled": "bool",
+          "id": "string",
+          "include_vm_memory_overhead": "bool",
+          "memory_guaranteed": "number",
+          "metadata": [
+            "map",
+            "string"
+          ],
+          "name": "string",
+          "network_pool_name": "string",
+          "network_quota": "number",
+          "nic_quota": "number",
+          "org": "string",
+          "provider_vdc_name": "string",
+          "storage_profile": [
+            "list",
+            [
+              "object",
+              {
+                "default": "bool",
+                "enabled": "bool",
+                "limit": "number",
+                "name": "string",
+                "storage_used_in_mb": "number"
+              }
+            ]
+          ],
+          "vm_quota": "number",
+          "vm_sizing_policy_ids": [
+            "set",
+            "string"
+          ]
+        }
+      ]
+    },
+    "role": {
+      "value": {
+        "bundle_key": "ROLE_ORGANIZATION_ADMINISTRATOR",
+        "description": "Built-in rights for administering an organization",
+        "id": "urn:vcloud:role:cf0c2bf1-7939-31e8-b81b-a9ae5de1d81d",
+        "name": "Organization Administrator",
+        "org": "g-K8S-SPB-NSXT-2",
+        "read_only": true,
+        "rights": [
+          "Access All Organization VDCs",
+          "Catalog: Add vApp from My Cloud",
+          "Catalog: CLSP Publish Subscribe",
+          "Catalog: Change Owner",
+          "Catalog: Create / Delete a Catalog",
+          "Catalog: Edit Properties",
+          "Catalog: Publish",
+          "Catalog: Sharing",
+          "Catalog: View ACL",
+          "Catalog: View Private and Shared Catalogs",
+          "Catalog: View Published Catalogs",
+          "Certificate Library: View",
+          "Custom entity: View all custom entity instances in org",
+          "Custom entity: View custom entity instance",
+          "General: Administrator Control",
+          "General: Administrator View",
+          "General: Send Notification",
+          "Group / User: View",
+          "Organization Network: Edit Properties",
+          "Organization Network: View",
+          "Organization VDC: view metrics",
+          "Organization vDC Compute Policy: View",
+          "Organization vDC Gateway: Configure BGP Routing",
+          "Organization vDC Gateway: Configure DHCP",
+          "Organization vDC Gateway: Configure DNS",
+          "Organization vDC Gateway: Configure Firewall",
+          "Organization vDC Gateway: Configure IPSec VPN",
+          "Organization vDC Gateway: Configure L2 VPN",
+          "Organization vDC Gateway: Configure Load Balancer",
+          "Organization vDC Gateway: Configure NAT",
+          "Organization vDC Gateway: Configure OSPF Routing",
+          "Organization vDC Gateway: Configure Remote Access",
+          "Organization vDC Gateway: Configure SSL VPN",
+          "Organization vDC Gateway: Configure Static Routing",
+          "Organization vDC Gateway: Configure Syslog",
+          "Organization vDC Gateway: View",
+          "Organization vDC Gateway: View BGP Routing",
+          "Organization vDC Gateway: View DHCP",
+          "Organization vDC Gateway: View DNS",
+          "Organization vDC Gateway: View Firewall",
+          "Organization vDC Gateway: View IPSec VPN",
+          "Organization vDC Gateway: View L2 VPN",
+          "Organization vDC Gateway: View Load Balancer",
+          "Organization vDC Gateway: View NAT",
+          "Organization vDC Gateway: View OSPF Routing",
+          "Organization vDC Gateway: View Remote Access",
+          "Organization vDC Gateway: View SSL VPN",
+          "Organization vDC Gateway: View Static Routing",
+          "Organization vDC Named Disk: Change Owner",
+          "Organization vDC Named Disk: Create",
+          "Organization vDC Named Disk: Delete",
+          "Organization vDC Named Disk: Edit Properties",
+          "Organization vDC Named Disk: View Properties",
+          "Organization vDC Network: Edit Properties",
+          "Organization vDC Network: View Properties",
+          "Organization vDC Storage Profile: Set Default",
+          "Organization vDC: Edit",
+          "Organization vDC: Edit ACL",
+          "Organization vDC: VM-VM Affinity Edit",
+          "Organization vDC: View",
+          "Organization vDC: View ACL",
+          "Organization: Edit Association Settings",
+          "Organization: Edit Federation Settings",
+          "Organization: Edit Leases Policy",
+          "Organization: Edit OAuth Settings",
+          "Organization: Edit Password Policy",
+          "Organization: Edit Properties",
+          "Organization: Edit Quotas Policy",
+          "Organization: Edit SMTP Settings",
+          "Organization: Import User/Group from IdP while Editing VDC ACL",
+          "Organization: View",
+          "Organization: view metrics",
+          "Quota Policy Capabilities: View",
+          "SSL: Test Connection",
+          "Service Library: View service libraries",
+          "Truststore: Manage",
+          "Truststore: View",
+          "UI Plugins: View",
+          "VAPP_VM_METADATA_TO_VCENTER",
+          "vApp Template / Media: Copy",
+          "vApp Template / Media: Create / Upload",
+          "vApp Template / Media: Edit",
+          "vApp Template / Media: View",
+          "vApp Template: Change Owner",
+          "vApp Template: Checkout",
+          "vApp Template: Download",
+          "vApp: Change Owner",
+          "vApp: Copy",
+          "vApp: Create / Reconfigure",
+          "vApp: Delete",
+          "vApp: Download",
+          "vApp: Edit Properties",
+          "vApp: Edit VM CPU",
+          "vApp: Edit VM Hard Disk",
+          "vApp: Edit VM Memory",
+          "vApp: Edit VM Network",
+          "vApp: Edit VM Properties",
+          "vApp: Manage VM Password Settings",
+          "vApp: Power Operations",
+          "vApp: Sharing",
+          "vApp: Upload",
+          "vApp: Use Console",
+          "vApp: VM Boot Options",
+          "vApp: View ACL",
+          "vApp: View VM metrics"
+        ]
+      },
+      "type": [
+        "object",
+        {
+          "bundle_key": "string",
+          "description": "string",
+          "id": "string",
+          "name": "string",
+          "org": "string",
+          "read_only": "bool",
+          "rights": [
+            "set",
+            "string"
+          ]
+        }
+      ]
+    }
+  },
+  "resources": [
+    {
+      "mode": "data",
+      "type": "vcd_org",
+      "name": "my-org",
+      "provider": "provider[\"registry.terraform.io/vmware/vcd\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "can_publish_catalogs": false,
+            "delay_after_power_on_seconds": 0,
+            "deployed_vm_quota": 0,
+            "description": "g-K8S-SPB-NSXT-2",
+            "full_name": "g-K8S-SPB-NSXT-2",
+            "id": "urn:vcloud:org:8d138d48-eaf3-4585-a976-3ace98a11356",
+            "is_enabled": true,
+            "name": "g-K8S-SPB-NSXT-2",
+            "stored_vm_quota": 0,
+            "vapp_lease": [
+              {
+                "delete_on_storage_lease_expiration": false,
+                "maximum_runtime_lease_in_sec": 0,
+                "maximum_storage_lease_in_sec": 0,
+                "power_off_on_runtime_lease_expiration": false
+              }
+            ],
+            "vapp_template_lease": [
+              {
+                "delete_on_storage_lease_expiration": false,
+                "maximum_storage_lease_in_sec": 0
+              }
+            ]
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    },
+    {
+      "mode": "data",
+      "type": "vcd_org_vdc",
+      "name": "my-org-vdc",
+      "provider": "provider[\"registry.terraform.io/vmware/vcd\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "allocation_model": "AllocationPool",
+            "allow_over_commit": null,
+            "compute_capacity": [
+              {
+                "cpu": [
+                  {
+                    "allocated": 80600,
+                    "limit": 80600,
+                    "reserved": 0,
+                    "used": 0
+                  }
+                ],
+                "memory": [
+                  {
+                    "allocated": 40960,
+                    "limit": 40960,
+                    "reserved": 20480,
+                    "used": 0
+                  }
+                ]
+              }
+            ],
+            "cpu_guaranteed": null,
+            "cpu_speed": null,
+            "default_vm_sizing_policy_id": "urn:vcloud:vdcComputePolicy:1608caf3-4318-4e7d-b93d-5ece33d6c5c0",
+            "description": "",
+            "elasticity": null,
+            "enable_fast_provisioning": null,
+            "enable_thin_provisioning": null,
+            "enable_vm_discovery": false,
+            "enabled": true,
+            "id": "urn:vcloud:vdc:fc90b202-fb19-4d28-a3ec-114dfe5e780c",
+            "include_vm_memory_overhead": null,
+            "memory_guaranteed": null,
+            "metadata": {},
+            "name": "g-K8S-SPB-NSXT-2_vDC",
+            "network_pool_name": null,
+            "network_quota": 100,
+            "nic_quota": 0,
+            "org": "g-K8S-SPB-NSXT-2",
+            "provider_vdc_name": null,
+            "storage_profile": [
+              {
+                "default": true,
+                "enabled": true,
+                "limit": 452608,
+                "name": "SSD1",
+                "storage_used_in_mb": 0
+              }
+            ],
+            "vm_quota": 100,
+            "vm_sizing_policy_ids": [
+              "urn:vcloud:vdcComputePolicy:1608caf3-4318-4e7d-b93d-5ece33d6c5c0"
+            ]
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    },
+    {
+      "mode": "data",
+      "type": "vcd_role",
+      "name": "my-role",
+      "provider": "provider[\"registry.terraform.io/vmware/vcd\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "bundle_key": "ROLE_ORGANIZATION_ADMINISTRATOR",
+            "description": "Built-in rights for administering an organization",
+            "id": "urn:vcloud:role:cf0c2bf1-7939-31e8-b81b-a9ae5de1d81d",
+            "name": "Organization Administrator",
+            "org": "g-K8S-SPB-NSXT-2",
+            "read_only": true,
+            "rights": [
+              "Access All Organization VDCs",
+              "Catalog: Add vApp from My Cloud",
+              "Catalog: CLSP Publish Subscribe",
+              "Catalog: Change Owner",
+              "Catalog: Create / Delete a Catalog",
+              "Catalog: Edit Properties",
+              "Catalog: Publish",
+              "Catalog: Sharing",
+              "Catalog: View ACL",
+              "Catalog: View Private and Shared Catalogs",
+              "Catalog: View Published Catalogs",
+              "Certificate Library: View",
+              "Custom entity: View all custom entity instances in org",
+              "Custom entity: View custom entity instance",
+              "General: Administrator Control",
+              "General: Administrator View",
+              "General: Send Notification",
+              "Group / User: View",
+              "Organization Network: Edit Properties",
+              "Organization Network: View",
+              "Organization VDC: view metrics",
+              "Organization vDC Compute Policy: View",
+              "Organization vDC Gateway: Configure BGP Routing",
+              "Organization vDC Gateway: Configure DHCP",
+              "Organization vDC Gateway: Configure DNS",
+              "Organization vDC Gateway: Configure Firewall",
+              "Organization vDC Gateway: Configure IPSec VPN",
+              "Organization vDC Gateway: Configure L2 VPN",
+              "Organization vDC Gateway: Configure Load Balancer",
+              "Organization vDC Gateway: Configure NAT",
+              "Organization vDC Gateway: Configure OSPF Routing",
+              "Organization vDC Gateway: Configure Remote Access",
+              "Organization vDC Gateway: Configure SSL VPN",
+              "Organization vDC Gateway: Configure Static Routing",
+              "Organization vDC Gateway: Configure Syslog",
+              "Organization vDC Gateway: View",
+              "Organization vDC Gateway: View BGP Routing",
+              "Organization vDC Gateway: View DHCP",
+              "Organization vDC Gateway: View DNS",
+              "Organization vDC Gateway: View Firewall",
+              "Organization vDC Gateway: View IPSec VPN",
+              "Organization vDC Gateway: View L2 VPN",
+              "Organization vDC Gateway: View Load Balancer",
+              "Organization vDC Gateway: View NAT",
+              "Organization vDC Gateway: View OSPF Routing",
+              "Organization vDC Gateway: View Remote Access",
+              "Organization vDC Gateway: View SSL VPN",
+              "Organization vDC Gateway: View Static Routing",
+              "Organization vDC Named Disk: Change Owner",
+              "Organization vDC Named Disk: Create",
+              "Organization vDC Named Disk: Delete",
+              "Organization vDC Named Disk: Edit Properties",
+              "Organization vDC Named Disk: View Properties",
+              "Organization vDC Network: Edit Properties",
+              "Organization vDC Network: View Properties",
+              "Organization vDC Storage Profile: Set Default",
+              "Organization vDC: Edit",
+              "Organization vDC: Edit ACL",
+              "Organization vDC: VM-VM Affinity Edit",
+              "Organization vDC: View",
+              "Organization vDC: View ACL",
+              "Organization: Edit Association Settings",
+              "Organization: Edit Federation Settings",
+              "Organization: Edit Leases Policy",
+              "Organization: Edit OAuth Settings",
+              "Organization: Edit Password Policy",
+              "Organization: Edit Properties",
+              "Organization: Edit Quotas Policy",
+              "Organization: Edit SMTP Settings",
+              "Organization: Import User/Group from IdP while Editing VDC ACL",
+              "Organization: View",
+              "Organization: view metrics",
+              "Quota Policy Capabilities: View",
+              "SSL: Test Connection",
+              "Service Library: View service libraries",
+              "Truststore: Manage",
+              "Truststore: View",
+              "UI Plugins: View",
+              "VAPP_VM_METADATA_TO_VCENTER",
+              "vApp Template / Media: Copy",
+              "vApp Template / Media: Create / Upload",
+              "vApp Template / Media: Edit",
+              "vApp Template / Media: View",
+              "vApp Template: Change Owner",
+              "vApp Template: Checkout",
+              "vApp Template: Download",
+              "vApp: Change Owner",
+              "vApp: Copy",
+              "vApp: Create / Reconfigure",
+              "vApp: Delete",
+              "vApp: Download",
+              "vApp: Edit Properties",
+              "vApp: Edit VM CPU",
+              "vApp: Edit VM Hard Disk",
+              "vApp: Edit VM Memory",
+              "vApp: Edit VM Network",
+              "vApp: Edit VM Properties",
+              "vApp: Manage VM Password Settings",
+              "vApp: Power Operations",
+              "vApp: Sharing",
+              "vApp: Upload",
+              "vApp: Use Console",
+              "vApp: VM Boot Options",
+              "vApp: View ACL",
+              "vApp: View VM metrics"
+            ]
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "vcd_vm",
+      "name": "test-vm",
+      "provider": "provider[\"registry.terraform.io/vmware/vcd\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "accept_all_eulas": true,
+            "boot_image": null,
+            "catalog_name": "k8s-spb",
+            "computer_name": "centos-792009-kernel-5-x8664-001",
+            "cpu_cores": 1,
+            "cpu_hot_add_enabled": false,
+            "cpus": 2,
+            "customization": [
+              {
+                "allow_local_admin_password": true,
+                "auto_generate_password": true,
+                "change_sid": false,
+                "enabled": true,
+                "force": false,
+                "initscript": "",
+                "join_domain": false,
+                "join_domain_account_ou": "",
+                "join_domain_name": "",
+                "join_domain_password": "",
+                "join_domain_user": "",
+                "join_org_domain": false,
+                "must_change_password_on_first_login": false,
+                "number_of_auto_logons": 0
+              }
+            ],
+            "description": "",
+            "disk": [],
+            "expose_hardware_virtualization": false,
+            "guest_properties": null,
+            "hardware_version": "vmx-10",
+            "href": "https://cloud.com/api/vApp/vm-eb74b52d-4244-4272-a7ad-4bf9c563cd73",
+            "id": "urn:vcloud:vm:eb74b52d-4244-4272-a7ad-4bf9c563cd73",
+            "internal_disk": [
+              {
+                "bus_number": 0,
+                "bus_type": "paravirtual",
+                "disk_id": "2000",
+                "iops": 0,
+                "size_in_mb": 8192,
+                "storage_profile": "SSD1",
+                "thin_provisioned": true,
+                "unit_number": 0
+              }
+            ],
+            "memory": 2048,
+            "memory_hot_add_enabled": false,
+            "metadata": null,
+            "name": "test-vm",
+            "network": [],
+            "network_dhcp_wait_seconds": null,
+            "org": null,
+            "os_type": "rhel7_64Guest",
+            "override_template_disk": [],
+            "power_on": true,
+            "prevent_update_power_off": false,
+            "sizing_policy_id": "urn:vcloud:vdcComputePolicy:1608caf3-4318-4e7d-b93d-5ece33d6c5c0",
+            "storage_profile": "SSD1",
+            "template_name": "centos-7.9.2009-kernel-5-x86_64",
+            "vapp_name": "test-vm-26c7f83a-d0cc-49cd-a7a8-3602d2720aaa",
+            "vdc": null,
+            "vm_name_in_template": null,
+            "vm_type": "vcd_vm"
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA=="
+        }
+      ]
+    }
+  ]
+}
+
+-----------------------------------------------------
+2021-07-03T12:25:39.032+0300 [DEBUG] [aws-sdk-go] DEBUG: Response s3/PutObject Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 0
+Date: Sat, 03 Jul 2021 09:25:38 GMT
+Etag: "187e8afc057d51a9e2742474ec7763a8"
+Server: CloudianS3
+X-Amz-Request-Id: 06487594-33a3-1ee7-944b-b4055d2db448
+
+
+-----------------------------------------------------
+2021-07-03T12:25:39.032+0300 [DEBUG] [aws-sdk-go]
